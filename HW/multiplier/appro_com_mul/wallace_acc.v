@@ -2,7 +2,7 @@
 `include "ha.v"
 `include "cp_acc.v"
 `include "cp_app.v"
-module wallace_acc(a,b,sum);
+module wallace(a,b,sum);
 	input[15:0] a,b;
   
 
@@ -737,7 +737,7 @@ module wallace_acc(a,b,sum);
 	fa FA_4(SF_4, CF_4, P_15_6, P_14_7, CO_28);
 	fa FA_5(SF_5, CF_5, P_2_8, P_1_9, P_0_10);
 	fa FA_6(SF_6, CF_6, P_15_10, P_14_11, CO_42);
-	fa FA_7(SF_7, CF_7, P_2_12, P_1_13, P_0_4);
+	fa FA_7(SF_7, CF_7, P_2_12, P_1_13, P_0_14);
 	fa FA_8(SF_8, CF_8, P_15_14, P_14_15, CO_56);
  	
 	//compressor;
@@ -745,7 +745,7 @@ module wallace_acc(a,b,sum);
 	cp_acc CP_2(SC_2,CO_2,CC_2,P_4_0,P_3_1,P_2_2,P_1_3,CO_1);
 	cp_acc CP_3(SC_3,CO_3,CC_3,P_5_0,P_4_1,P_3_2,P_2_3,CO_2);
 	cp_acc CP_4(SC_4,CO_4,CC_4,P_6_0,P_5_1,P_4_2,P_3_3,CO_3);
-	cp_acc CP_5(SC_5,CO_5,CC_5,P_7_0,P_6_1,P_5_2,P_4_2,CO_4);
+	cp_acc CP_5(SC_5,CO_5,CC_5,P_7_0,P_6_1,P_5_2,P_4_3,CO_4);
 	cp_acc CP_6(SC_6,CO_6,CC_6,P_8_0,P_7_1,P_6_2,P_5_3,CO_5);
 	cp_acc CP_7(SC_7,CO_7,CC_7,P_9_0,P_8_1,P_7_2,P_6_3,CO_6);
 	cp_acc CP_8(SC_8,CO_8,CC_8,P_10_0,P_9_1,P_8_2,P_7_3,CO_7);
@@ -768,7 +768,7 @@ module wallace_acc(a,b,sum);
 	cp_acc CP_25(SC_25,CO_25,CC_25,P_13_4,P_12_5,P_11_6,P_10_7,CO_24);
 	cp_acc CP_26(SC_26,CO_26,CC_26,P_14_4,P_13_5,P_12_6,P_11_7,CO_25);
 	cp_acc CP_27(SC_27,CO_27,CC_27,P_15_4,P_14_5,P_13_6,P_12_7,CO_26);
-	cp_acc CP_28(SC_28,CO_28,CC_28,P_15_4,P_14_6,P_13_7,ground_z,CO_27);
+	cp_acc CP_28(SC_28,CO_28,CC_28,P_15_5,P_14_6,P_13_7,ground_z,CO_27);
 	cp_acc CP_29(SC_29,CO_29,CC_29,P_3_8,P_2_9,P_1_10,P_0_11,ground_z);
 	cp_acc CP_30(SC_30,CO_30,CC_30,P_4_8,P_3_9,P_2_10,P_1_11,CO_29);
 	cp_acc CP_31(SC_31,CO_31,CC_31,P_5_8,P_4_9,P_3_10,P_2_11,CO_30);
@@ -929,8 +929,8 @@ module wallace_acc(a,b,sum);
 	ha HA_9(SH_9, CH_9, CF_4, P_15_7);
 	ha HA_10(SH_10, CH_10, SF_5, CH_3);
 	ha HA_11(SH_11, CH_11, SC_29, CF_5);
-	ha HA_12(SH_12, CH_12, SC_56, CC_54);
-	ha HA_13(SH_13, CH_13, SC_56, CC_56);
+	ha HA_12(SH_12, CH_12, SC_56, CC_55);
+	ha HA_13(SH_13, CH_13, SF_8, CC_56);
 	ha HA_14(SH_14, CH_14, CF_8, P_15_15);
  	
 	//full adder
@@ -941,8 +941,7 @@ module wallace_acc(a,b,sum);
 	fa FA_13(SF_13, CF_13, SC_31, CC_30, SH_4);
 	fa FA_14(SF_14, CF_14, SC_55, CC_54, CO_83);
  	
- 	
-	//compressor
+ //compressor
 	cp_acc CP_57(SC_57,CO_57,CC_57,SC_4,CC_3,SF_3,CH_2,ground_z);
 	cp_acc CP_58(SC_58,CO_58,CC_58,SC_5,CC_4,SC_15,CF_3,CO_57);
 	cp_acc CP_59(SC_59,CO_59,CC_59,SC_6,CC_5,SC_16,CC_15,CO_58);
@@ -1072,9 +1071,9 @@ module wallace_acc(a,b,sum);
 	fa FA_18(SF_18, CF_18, SC_81, CC_80, CO_96);
  	
 	cp_acc CP_84(SC_84,CO_84,CC_84,SC_62,CC_61,SH_11,CH_10,ground_z);
-	cp_acc CP_85(SC_85,CO_85,CC_85,SC_63,CC_62,SH_12,CH_11,CO_84);
-	cp_acc CP_86(SC_86,CO_86,CC_86,SC_64,CC_63,SH_13,CH_12,CO_85);
-	cp_acc CP_87(SC_87,CO_87,CC_87,SC_65,CC_64,SC_70,CH_13,CO_86);
+	cp_acc CP_85(SC_85,CO_85,CC_85,SC_63,CC_62,SF_12,CH_11,CO_84);
+	cp_acc CP_86(SC_86,CO_86,CC_86,SC_64,CC_63,SF_13,CF_12,CO_85);
+	cp_acc CP_87(SC_87,CO_87,CC_87,SC_65,CC_64,SC_70,CF_13,CO_86);
 	cp_acc CP_88(SC_88,CO_88,CC_88,SC_66,CC_65,SC_71,CC_70,CO_87);
 	cp_acc CP_89(SC_89,CO_89,CC_89,SC_67,CC_66,SC_73,CC_71,CO_88);
 	cp_acc CP_90(SC_90,CO_90,CC_90,SC_68,CC_67,SC_74,CC_73,CO_89);
@@ -1143,7 +1142,7 @@ module wallace_acc(a,b,sum);
 	wire SF_51;
 	wire SF_52;
 
-	fa FA_19(SF_26, CF_26, SH_16, CH_15,ground_z);
+	ha FA_19(SF_26, CF_26, SH_16, CH_15);
 	fa FA_20(SF_27, CF_27, SH_17, CH_16,CF_26);
 	fa FA_21(SF_28, CF_28, SH_18, CH_17,CF_27);
 	fa FA_22(SF_29, CF_29, SH_19, CH_18,CF_28);
