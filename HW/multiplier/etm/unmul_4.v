@@ -1,6 +1,4 @@
-module unmul_4(input [3:0] a,b, output [7:0] result);
-
-reg [7:0] result;
+module unmul_4(input [3:0] a,b, output reg [7:0] result);
 
 always@(*) begin
  if (a[3] | b[3]) begin
