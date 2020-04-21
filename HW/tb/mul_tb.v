@@ -7,28 +7,30 @@ logic[31:0] actual_output;
 logic[31:0] expect_output;
 real        e_cn;
 real        r_cn;
-real        ed;
-real        avg_var1;
-real        avg_var2;
+real        avg_var;
 real        diff;
 real        max_error;
 real        cn_t;
-  
+real        acc_temp,ap,er;
+real        ap_cn;
+parameter MAA = 0.9;  
 
  
-  wallace uut(.a(a), .b(b),.sum(sum));
+wallace uut(.a(a), .b(b),.sum(sum));
  
 initial begin
     a = 0;
     b = 0;
   	e_cn = 0;
     r_cn = 1000000;
-    ed = 0;
-  	avg_var1 = 0;
-  	avg_var2 = 0;
+    avg_var = 0;
     diff = 0;
     max_error = 0;
     cn_t = 0;
+    ap = 0;
+    ap_cn = 0;
+    er = 0;
+  
 
     #1
  
@@ -41,18 +43,20 @@ initial begin
     #1
     expect_output = a *b;
     actual_output = sum;
-   
+    
+    acc_temp =  (((real'(expect_output) - real'(actual_output))>0) ?(real'(expect_output) - real'(actual_output)):(real'(actual_output) - real'(expect_output)))/real'(expect_output);
+    
+    
+    if((1-acc_temp) > MAA)
+      ap_cn += 1;
     
     if(expect_output != actual_output)
       begin
-        //$display("E %b\nA %b\n", expect_output,actual_output);
         diff = ((real'(expect_output) - real'(actual_output))>0) ?(real'(expect_output) - real'(actual_output)):(real'(actual_output) - real'(expect_output));
-        //$display("Diff", diff);
+        
         max_error = (max_error > diff)?max_error:diff;
-        if(cn_t < r_cn /2)
-          avg_var1 = avg_var1 + diff;
-        else
-          avg_var2 = avg_var2 + diff;
+        avg_var = avg_var+ diff;
+
         e_cn = e_cn + 1;
 
       end  
@@ -60,11 +64,15 @@ initial begin
     
   #1
   //Calculate average ED
-  ed = avg_var1/max_error/r_cn +  avg_var2/max_error/r_cn;
+  avg_var = avg_var/max_error/r_cn;
+  ap = ap_cn/r_cn;
+  er = e_cn/r_cn;
   #1
   $display("Error/Total: %f/%f", e_cn,r_cn);
   $display("Max error: %f", max_error);
-  $display("NED: %f", ed);
+  $display("ned: %f", avg_var);
+  $display("ap: %f", ap);
+  $display("er: %f",er);
 end
  
 endmodule
