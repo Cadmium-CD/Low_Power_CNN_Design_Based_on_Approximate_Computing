@@ -11,18 +11,18 @@ real        avg_var;
 real        diff;
 real        max_error;
 real        cn_t;
-real        acc_temp,ap,er;
+real        acc_temp,ap,er,acc;
 real        ap_cn;
 parameter MAA = 0.9;  
 
  
-wallace uut(.a(a), .b(b),.sum(sum));
+wallace_32 uut(.a(a), .b(b),.sum(sum));
  
 initial begin
     a = 0;
     b = 0;
   	e_cn = 0;
-    r_cn = 1000000;
+    r_cn = 1000;
     avg_var = 0;
     diff = 0;
     max_error = 0;
@@ -30,6 +30,7 @@ initial begin
     ap = 0;
     ap_cn = 0;
     er = 0;
+    acc = 0;
   
 
     #1
@@ -46,7 +47,8 @@ initial begin
     
     acc_temp =  (((real'(expect_output) - real'(actual_output))>0) ?(real'(expect_output) - real'(actual_output)):(real'(actual_output) - real'(expect_output)))/real'(expect_output);
     
-    
+      acc = acc + 1-((expect_output == 0)? 0:acc_temp);
+      $display("acc: %f",acc_temp);
     if((1-acc_temp) > MAA)
       ap_cn += 1;
     
@@ -67,12 +69,14 @@ initial begin
   avg_var = avg_var/max_error/r_cn;
   ap = ap_cn/r_cn;
   er = e_cn/r_cn;
+  acc= acc/r_cn;
   #1
   $display("Error/Total: %f/%f", e_cn,r_cn);
   $display("Max error: %f", max_error);
   $display("ned: %f", avg_var);
   $display("ap: %f", ap);
   $display("er: %f",er);
+  $display("acc: %f",acc);
 end
  
 endmodule
