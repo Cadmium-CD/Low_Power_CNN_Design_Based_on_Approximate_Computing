@@ -1,7 +1,7 @@
 module rca_11bits(
     input [9:0] A,
     input [10:0] B,
-    output [10:0] Sum,
+    output [10:0] Sum
     );
 wire c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11;
 
