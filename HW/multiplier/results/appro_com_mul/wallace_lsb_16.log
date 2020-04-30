@@ -1,0 +1,163 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+               Version O-2018.06-SP5 for linux64 - Jan 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+set active_design_file wallace_lsb_16.v
+wallace_lsb_16.v
+set active_design wallace_lsb_16 
+wallace_lsb_16
+read_verilog $active_design_file
+1
+current_design $active_design
+Information: current_design won't return any data before link (DES-071)
+link_design $active_design
+Loading db file '/home/ecelrc/students/sbhagia/vlsi1/lab2/gscl45nm.db'
+Loading verilog file '/home/ecelrc/students/dcheng/EE_382V/HW/multiplier/results/appro_com_mul/wallace_lsb_16.v'
+Linking design wallace_lsb_16...
+Information: Removing 266 unneeded designs..... (LNK-034)
+Information: 25 (80.65%) library cells are unused in library gscl45nm..... (LNK-045)
+Information: total 25 library cells are unused (LNK-046)
+Design 'wallace_lsb_16' was successfully linked.
+Information: There are 1554 leaf cells, ports, hiers and 2843 nets in the design (LNK-047)
+1
+create_clock -name vclk -period 20 -waveform {0 10}
+Warning: Creating virtual clock named 'vclk' with no sources. (UITE-121)
+1
+set_input_delay 0 -clock vclk [all_inputs]
+1
+set power_enable_analysis TRUE
+Information: Checked out license 'PrimePower' (PT-019)
+TRUE
+report_timing -to [all_outputs] -significant_digits 4
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : wallace_lsb_16
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 02:14:41 2020
+****************************************
+
+
+  Startpoint: b[2] (input port clocked by vclk)
+  Endpoint: sum[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  b[2] (in)                              0.0000     0.0000 r
+  U427/Y (AND2X1)                        0.0610     0.0610 r
+  CP_14/FA_CP_1/U6/Y (XNOR2X1)           0.0741     0.1351 r
+  CP_14/FA_CP_1/U3/Y (XOR2X1)            0.0710     0.2061 r
+  CP_14/FA_CP_2/U6/Y (XNOR2X1)           0.0458     0.2519 f
+  CP_14/FA_CP_2/U3/Y (XOR2X1)            0.0676     0.3195 r
+  CP_67/FA_CP_1/U6/Y (XNOR2X1)           0.0619     0.3813 r
+  CP_67/FA_CP_1/U3/Y (XOR2X1)            0.0710     0.4524 r
+  CP_67/FA_CP_2/U6/Y (XNOR2X1)           0.0619     0.5142 r
+  CP_67/FA_CP_2/U3/Y (XOR2X1)            0.0710     0.5853 r
+  CP_89/FA_CP_1/U6/Y (XNOR2X1)           0.0619     0.6471 r
+  CP_89/FA_CP_1/U3/Y (XOR2X1)            0.0710     0.7181 r
+  CP_89/FA_CP_2/U6/Y (XNOR2X1)           0.0458     0.7640 f
+  CP_89/FA_CP_2/U3/Y (XOR2X1)            0.0676     0.8315 r
+  FA_31/U1/Y (AND2X1)                    0.0279     0.8594 r
+  FA_31/U2/Y (INVX1)                     0.0197     0.8792 f
+  FA_31/U4/Y (OAI21X1)                   0.0162     0.8954 r
+  FA_32/U5/Y (INVX1)                     0.0296     0.9250 f
+  FA_32/U4/Y (OAI21X1)                   0.0414     0.9664 r
+  FA_33/U5/Y (INVX1)                     0.0342     1.0006 f
+  FA_33/U4/Y (OAI21X1)                   0.0412     1.0418 r
+  FA_34/U5/Y (INVX1)                     0.0342     1.0760 f
+  FA_34/U4/Y (OAI21X1)                   0.0412     1.1172 r
+  FA_35/U5/Y (INVX1)                     0.0342     1.1514 f
+  FA_35/U4/Y (OAI21X1)                   0.0412     1.1926 r
+  FA_36/U5/Y (INVX1)                     0.0342     1.2268 f
+  FA_36/U4/Y (OAI21X1)                   0.0412     1.2680 r
+  FA_37/U5/Y (INVX1)                     0.0342     1.3022 f
+  FA_37/U4/Y (OAI21X1)                   0.0412     1.3434 r
+  FA_38/U5/Y (INVX1)                     0.0342     1.3776 f
+  FA_38/U4/Y (OAI21X1)                   0.0412     1.4188 r
+  FA_39/U5/Y (INVX1)                     0.0342     1.4530 f
+  FA_39/U4/Y (OAI21X1)                   0.0412     1.4942 r
+  FA_40/U5/Y (INVX1)                     0.0342     1.5284 f
+  FA_40/U4/Y (OAI21X1)                   0.0412     1.5696 r
+  FA_41/U5/Y (INVX1)                     0.0342     1.6038 f
+  FA_41/U4/Y (OAI21X1)                   0.0412     1.6450 r
+  FA_42/U5/Y (INVX1)                     0.0342     1.6792 f
+  FA_42/U4/Y (OAI21X1)                   0.0412     1.7204 r
+  FA_43/U5/Y (INVX1)                     0.0342     1.7546 f
+  FA_43/U4/Y (OAI21X1)                   0.0412     1.7958 r
+  FA_44/U5/Y (INVX1)                     0.0342     1.8300 f
+  FA_44/U4/Y (OAI21X1)                   0.0412     1.8712 r
+  FA_45/U5/Y (INVX1)                     0.0342     1.9054 f
+  FA_45/U4/Y (OAI21X1)                   0.0412     1.9466 r
+  FA_46/U5/Y (INVX1)                     0.0342     1.9808 f
+  FA_46/U3/Y (XOR2X1)                    0.0276     2.0084 r
+  sum[31] (out)                          0.0000     2.0084 r
+  data arrival time                                 2.0084
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+report_power -nosplit
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-nosplit
+Design : wallace_lsb_16
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 02:14:41 2020
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           5.959e-05 3.898e-05 2.060e-05 1.192e-04 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 3.898e-05   (32.71%)
+  Cell Internal Power  = 5.959e-05   (50.01%)
+  Cell Leakage Power   = 2.060e-05   (17.29%)
+                         ---------
+Total Power            = 1.192e-04  (100.00%)
+
+1
+exit
+Information: Defining new variable 'active_design'. (CMD-041)
+Information: Defining new variable 'active_design_file'. (CMD-041)
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 925.66 MB
+CPU usage for this session: 5 seconds 
+Elapsed time for this session: 4 seconds
+Diagnostics summary: 1 error, 3 warnings, 10 informationals
+
+Thank you for using pt_shell!

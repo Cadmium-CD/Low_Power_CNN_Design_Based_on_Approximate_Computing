@@ -1,0 +1,122 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+               Version O-2018.06-SP5 for linux64 - Jan 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+set active_design_file cla_16_3.v
+cla_16_3.v
+set active_design cla_16_3
+cla_16_3
+read_verilog $active_design_file
+1
+current_design $active_design
+Information: current_design won't return any data before link (DES-071)
+link_design $active_design
+Loading db file '/home/ecelrc/students/sbhagia/vlsi1/lab2/gscl45nm.db'
+Loading verilog file '/home/ecelrc/students/dcheng/EE_382V/HW/adder/results/cla/cla_16_3.v'
+Linking design cla_16_3...
+Information: 23 (74.19%) library cells are unused in library gscl45nm..... (LNK-045)
+Information: total 23 library cells are unused (LNK-046)
+Design 'cla_16_3' was successfully linked.
+Information: There are 166 leaf cells, ports, hiers and 148 nets in the design (LNK-047)
+1
+create_clock -name vclk -period 20 -waveform {0 10}
+Warning: Creating virtual clock named 'vclk' with no sources. (UITE-121)
+1
+set_input_delay 0 -clock vclk [all_inputs]
+1
+set power_enable_analysis TRUE
+Information: Checked out license 'PrimePower' (PT-019)
+TRUE
+report_timing -to [all_outputs] -significant_digits 4
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : cla_16_3
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 01:43:35 2020
+****************************************
+
+
+  Startpoint: b[1] (input port clocked by vclk)
+  Endpoint: sum[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  b[1] (in)                              0.0000     0.0000 f
+  U174/Y (XNOR2X1)                       0.0723     0.0723 r
+  U165/Y (INVX1)                         0.0334     0.1057 f
+  U164/Y (NAND3X1)                       0.0332     0.1389 r
+  U114/Y (BUFX2)                         0.0349     0.1737 r
+  U94/Y (AND2X1)                         0.0407     0.2144 r
+  U113/Y (INVX1)                         0.0269     0.2413 f
+  U161/Y (XOR2X1)                        0.0266     0.2679 r
+  sum[3] (out)                           0.0000     0.2679 r
+  data arrival time                                 0.2679
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+report_power -nosplit
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-nosplit
+Design : cla_16_3
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 01:43:35 2020
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           4.440e-06 2.074e-06 2.000e-06 8.513e-06 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.074e-06   (24.36%)
+  Cell Internal Power  = 4.440e-06   (52.15%)
+  Cell Leakage Power   = 2.000e-06   (23.49%)
+                         ---------
+Total Power            = 8.513e-06  (100.00%)
+
+1
+exit
+Information: Defining new variable 'active_design'. (CMD-041)
+Information: Defining new variable 'active_design_file'. (CMD-041)
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 897.93 MB
+CPU usage for this session: 4 seconds 
+Elapsed time for this session: 4 seconds
+Diagnostics summary: 1 error, 2 warnings, 9 informationals
+
+Thank you for using pt_shell!

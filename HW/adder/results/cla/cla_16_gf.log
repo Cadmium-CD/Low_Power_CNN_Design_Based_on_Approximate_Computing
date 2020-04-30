@@ -1,0 +1,145 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+               Version O-2018.06-SP5 for linux64 - Jan 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+set active_design_file cla_16_gf.v
+cla_16_gf.v
+set active_design carry_look_ahead_16bit
+carry_look_ahead_16bit
+read_verilog $active_design_file
+1
+current_design $active_design
+Information: current_design won't return any data before link (DES-071)
+link_design $active_design
+Loading verilog file '/home/ecelrc/students/dcheng/EE_382V/HW/adder/results/cla/cla_16_gf.v'
+Loading db file '/home/ecelrc/students/sbhagia/vlsi1/lab2/gscl45nm.db'
+Linking design carry_look_ahead_16bit...
+Information: Removing 4 unneeded designs..... (LNK-034)
+Information: 24 (77.42%) library cells are unused in library gscl45nm..... (LNK-045)
+Information: total 24 library cells are unused (LNK-046)
+Design 'carry_look_ahead_16bit' was successfully linked.
+Information: There are 135 leaf cells, ports, hiers and 169 nets in the design (LNK-047)
+1
+create_clock -name vclk -period 20 -waveform {0 10}
+Warning: Creating virtual clock named 'vclk' with no sources. (UITE-121)
+1
+set_input_delay 0 -clock vclk [all_inputs]
+1
+set power_enable_analysis TRUE
+Information: Checked out license 'PrimePower' (PT-019)
+TRUE
+report_timing -to [all_outputs] -significant_digits 4
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : carry_look_ahead_16bit
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 02:10:59 2020
+****************************************
+
+
+  Startpoint: b[0] (input port clocked by vclk)
+  Endpoint: sum[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  b[0] (in)                              0.0000     0.0000 f
+  cla1/U19/Y (XOR2X1)                    0.0681     0.0681 r
+  cla1/U17/Y (AOI21X1)                   0.0294     0.0975 f
+  cla1/U6/Y (BUFX2)                      0.0396     0.1371 f
+  cla1/U15/Y (OAI21X1)                   0.0598     0.1969 r
+  cla1/U14/Y (AND2X1)                    0.0389     0.2358 r
+  cla1/U13/Y (AOI21X1)                   0.0152     0.2510 f
+  cla1/U5/Y (BUFX2)                      0.0396     0.2906 f
+  cla1/U11/Y (OAI21X1)                   0.0610     0.3516 r
+  cla2/U17/Y (AOI21X1)                   0.0375     0.3891 f
+  cla2/U6/Y (BUFX2)                      0.0394     0.4285 f
+  cla2/U15/Y (OAI21X1)                   0.0597     0.4882 r
+  cla2/U14/Y (AND2X1)                    0.0389     0.5270 r
+  cla2/U13/Y (AOI21X1)                   0.0152     0.5423 f
+  cla2/U5/Y (BUFX2)                      0.0396     0.5819 f
+  cla2/U11/Y (OAI21X1)                   0.0610     0.6429 r
+  cla3/U17/Y (AOI21X1)                   0.0375     0.6804 f
+  cla3/U6/Y (BUFX2)                      0.0394     0.7197 f
+  cla3/U15/Y (OAI21X1)                   0.0597     0.7795 r
+  cla3/U14/Y (AND2X1)                    0.0389     0.8183 r
+  cla3/U13/Y (AOI21X1)                   0.0152     0.8335 f
+  cla3/U5/Y (BUFX2)                      0.0396     0.8731 f
+  cla3/U11/Y (OAI21X1)                   0.0610     0.9341 r
+  cla4/U17/Y (AOI21X1)                   0.0375     0.9716 f
+  cla4/U6/Y (BUFX2)                      0.0394     1.0110 f
+  cla4/U15/Y (OAI21X1)                   0.0597     1.0707 r
+  cla4/U14/Y (AND2X1)                    0.0389     1.1096 r
+  cla4/U13/Y (AOI21X1)                   0.0152     1.1248 f
+  cla4/U5/Y (BUFX2)                      0.0396     1.1644 f
+  cla4/U7/Y (XOR2X1)                     0.0418     1.2062 r
+  sum[15] (out)                          0.0000     1.2062 r
+  data arrival time                                 1.2062
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+report_power -nosplit
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-nosplit
+Design : carry_look_ahead_16bit
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 02:10:59 2020
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           4.229e-06 1.633e-06 1.815e-06 7.677e-06 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 1.633e-06   (21.27%)
+  Cell Internal Power  = 4.229e-06   (55.08%)
+  Cell Leakage Power   = 1.815e-06   (23.65%)
+                         ---------
+Total Power            = 7.677e-06  (100.00%)
+
+1
+exit
+Information: Defining new variable 'active_design'. (CMD-041)
+Information: Defining new variable 'active_design_file'. (CMD-041)
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 925.66 MB
+CPU usage for this session: 5 seconds 
+Elapsed time for this session: 4 seconds
+Diagnostics summary: 1 error, 2 warnings, 10 informationals
+
+Thank you for using pt_shell!

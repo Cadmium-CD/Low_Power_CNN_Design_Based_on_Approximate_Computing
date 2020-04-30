@@ -1,0 +1,47 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+               Version P-2019.03-SP5 for linux64 - Oct 15, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+set active_design cla_16_gr 
+cla_16_gr
+read_verilog $active_design
+Error: Cannot read file 'cla_16_gr'. (DBR-001)
+Error: Problem in read_verilog: No designs were read. (DBR-011)
+0
+current_design $active_design
+Information: current_design won't return any data before link (DES-071)
+link_design $active_design
+Error: Cannot find design 'cla_16_gr'. (DES-004)
+Error: Cannot find design 'cla_16_gr'. (DES-004)
+0
+create_clock -name vclk -period 20 -waveform {0 10}
+Error: Current design is not defined. (DES-001)
+set_input_delay 0 -clock vclk [all_inputs]
+Error: Current design is not defined. (DES-001)
+Error: Current design is not defined. (DES-001)
+set power_enable_analysis TRUE
+Information: Checked out license 'PrimePower' (PT-019)
+TRUE
+report_timing -to [all_outputs] -significant_digits 4
+Error: Current design is not defined. (DES-001)
+Error: Current design is not defined. (DES-001)
+report_power -nosplit
+Error: Current design is not defined. (DES-001)
+Information: Defining new variable 'active_design'. (CMD-041)
+pt_shell> 
+Information: Interrupting current command. (INT-2)
+
+Received Signal 1 from: PID=24047 (UID=27319)
+
+Timing updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 1254.28 MB
+CPU usage for this session: 4 seconds 
+Elapsed time for this session: 63 seconds

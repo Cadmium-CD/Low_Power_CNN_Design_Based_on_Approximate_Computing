@@ -1,0 +1,175 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+               Version O-2018.06-SP5 for linux64 - Jan 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+set active_design_file wallace_lsb_8.v
+wallace_lsb_8.v
+set active_design wallace_lsb_8 
+wallace_lsb_8
+read_verilog $active_design_file
+1
+current_design $active_design
+Information: current_design won't return any data before link (DES-071)
+link_design $active_design
+Loading db file '/home/ecelrc/students/sbhagia/vlsi1/lab2/gscl45nm.db'
+Loading verilog file '/home/ecelrc/students/dcheng/EE_382V/HW/multiplier/results/appro_com_mul/wallace_lsb_8.v'
+Linking design wallace_lsb_8...
+Information: Removing 340 unneeded designs..... (LNK-034)
+Information: 25 (80.65%) library cells are unused in library gscl45nm..... (LNK-045)
+Information: total 25 library cells are unused (LNK-046)
+Design 'wallace_lsb_8' was successfully linked.
+Information: There are 2035 leaf cells, ports, hiers and 3620 nets in the design (LNK-047)
+1
+create_clock -name vclk -period 20 -waveform {0 10}
+Warning: Creating virtual clock named 'vclk' with no sources. (UITE-121)
+1
+set_input_delay 0 -clock vclk [all_inputs]
+1
+set power_enable_analysis TRUE
+Information: Checked out license 'PrimePower' (PT-019)
+TRUE
+report_timing -to [all_outputs] -significant_digits 4
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : wallace_lsb_8
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 02:14:21 2020
+****************************************
+
+
+  Startpoint: b[1] (input port clocked by vclk)
+  Endpoint: sum[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  b[1] (in)                              0.0000     0.0000 r
+  U290/Y (AND2X1)                        0.0610     0.0610 r
+  CP_7/FA_CP_1/U6/Y (XNOR2X1)            0.0741     0.1351 r
+  CP_7/FA_CP_1/U3/Y (XOR2X1)             0.0710     0.2061 r
+  CP_7/FA_CP_2/U6/Y (XNOR2X1)            0.0619     0.2679 r
+  CP_7/FA_CP_2/U3/Y (XOR2X1)             0.0710     0.3390 r
+  CP_60/FA_CP_1/U6/Y (XNOR2X1)           0.0619     0.4008 r
+  CP_60/FA_CP_1/U3/Y (XOR2X1)            0.0710     0.4719 r
+  CP_60/FA_CP_2/U6/Y (XNOR2X1)           0.0619     0.5337 r
+  CP_60/FA_CP_2/U3/Y (XOR2X1)            0.0710     0.6048 r
+  FA_16/U6/Y (XNOR2X1)                   0.0619     0.6666 r
+  FA_16/U3/Y (XOR2X1)                    0.0710     0.7377 r
+  FA_24/U1/Y (AND2X1)                    0.0279     0.7655 r
+  FA_24/U2/Y (INVX1)                     0.0189     0.7844 f
+  FA_24/U4/Y (OAI21X1)                   0.0163     0.8007 r
+  FA_25/U5/Y (INVX1)                     0.0296     0.8303 f
+  FA_25/U4/Y (OAI21X1)                   0.0414     0.8717 r
+  FA_26/U5/Y (INVX1)                     0.0342     0.9059 f
+  FA_26/U4/Y (OAI21X1)                   0.0412     0.9471 r
+  FA_27/U5/Y (INVX1)                     0.0342     0.9813 f
+  FA_27/U4/Y (OAI21X1)                   0.0412     1.0225 r
+  FA_28/U5/Y (INVX1)                     0.0342     1.0567 f
+  FA_28/U4/Y (OAI21X1)                   0.0412     1.0979 r
+  FA_29/U5/Y (INVX1)                     0.0342     1.1321 f
+  FA_29/U4/Y (OAI21X1)                   0.0412     1.1733 r
+  FA_30/U5/Y (INVX1)                     0.0342     1.2075 f
+  FA_30/U4/Y (OAI21X1)                   0.0412     1.2487 r
+  FA_31/U5/Y (INVX1)                     0.0342     1.2829 f
+  FA_31/U4/Y (OAI21X1)                   0.0412     1.3241 r
+  FA_32/U5/Y (INVX1)                     0.0342     1.3583 f
+  FA_32/U4/Y (OAI21X1)                   0.0412     1.3995 r
+  FA_33/U5/Y (INVX1)                     0.0342     1.4337 f
+  FA_33/U4/Y (OAI21X1)                   0.0412     1.4749 r
+  FA_34/U5/Y (INVX1)                     0.0342     1.5091 f
+  FA_34/U4/Y (OAI21X1)                   0.0412     1.5503 r
+  FA_35/U5/Y (INVX1)                     0.0342     1.5845 f
+  FA_35/U4/Y (OAI21X1)                   0.0412     1.6257 r
+  FA_36/U5/Y (INVX1)                     0.0342     1.6599 f
+  FA_36/U4/Y (OAI21X1)                   0.0412     1.7011 r
+  FA_37/U5/Y (INVX1)                     0.0342     1.7353 f
+  FA_37/U4/Y (OAI21X1)                   0.0412     1.7765 r
+  FA_38/U5/Y (INVX1)                     0.0342     1.8107 f
+  FA_38/U4/Y (OAI21X1)                   0.0412     1.8519 r
+  FA_39/U5/Y (INVX1)                     0.0342     1.8861 f
+  FA_39/U4/Y (OAI21X1)                   0.0412     1.9273 r
+  FA_40/U5/Y (INVX1)                     0.0342     1.9615 f
+  FA_40/U4/Y (OAI21X1)                   0.0412     2.0027 r
+  FA_41/U5/Y (INVX1)                     0.0342     2.0369 f
+  FA_41/U4/Y (OAI21X1)                   0.0412     2.0781 r
+  FA_42/U5/Y (INVX1)                     0.0342     2.1123 f
+  FA_42/U4/Y (OAI21X1)                   0.0412     2.1535 r
+  FA_43/U5/Y (INVX1)                     0.0342     2.1877 f
+  FA_43/U4/Y (OAI21X1)                   0.0412     2.2289 r
+  FA_44/U5/Y (INVX1)                     0.0342     2.2631 f
+  FA_44/U4/Y (OAI21X1)                   0.0412     2.3043 r
+  FA_45/U5/Y (INVX1)                     0.0342     2.3385 f
+  FA_45/U4/Y (OAI21X1)                   0.0412     2.3797 r
+  FA_46/U5/Y (INVX1)                     0.0342     2.4139 f
+  FA_46/U3/Y (XOR2X1)                    0.0276     2.4415 r
+  sum[31] (out)                          0.0000     2.4415 r
+  data arrival time                                 2.4415
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+report_power -nosplit
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-nosplit
+Design : wallace_lsb_8
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 02:14:22 2020
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           9.333e-05 6.298e-05 2.744e-05 1.838e-04 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 6.298e-05   (34.28%)
+  Cell Internal Power  = 9.333e-05   (50.79%)
+  Cell Leakage Power   = 2.744e-05   (14.93%)
+                         ---------
+Total Power            = 1.838e-04  (100.00%)
+
+1
+exit
+Information: Defining new variable 'active_design'. (CMD-041)
+Information: Defining new variable 'active_design_file'. (CMD-041)
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 925.64 MB
+CPU usage for this session: 5 seconds 
+Elapsed time for this session: 4 seconds
+Diagnostics summary: 1 error, 3 warnings, 10 informationals
+
+Thank you for using pt_shell!
