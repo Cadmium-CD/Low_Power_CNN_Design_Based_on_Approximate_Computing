@@ -1,0 +1,147 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+               Version O-2018.06-SP5 for linux64 - Jan 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+set active_design_file etm_8_8.v 
+etm_8_8.v
+set active_design etm_8_8_etm
+etm_8_8_etm
+read_verilog $active_design_file
+1
+current_design $active_design
+Information: current_design won't return any data before link (DES-071)
+link_design $active_design
+Loading verilog file '/home/ecelrc/students/yzheng/EE_382V/HW/multiplier/results/etm/etm_8_8.v'
+Loading db file '/home/ecelrc/students/rrajarathnam/vlsi1/lab2/gscl45nm.db'
+Linking design etm_8_8_etm...
+Information: Removing 161 unneeded designs..... (LNK-034)
+Information: 26 (83.87%) library cells are unused in library gscl45nm..... (LNK-045)
+Information: total 26 library cells are unused (LNK-046)
+Design 'etm_8_8_etm' was successfully linked.
+Information: There are 588 leaf cells, ports, hiers and 1176 nets in the design (LNK-047)
+1
+create_clock -name vclk -period 20 -waveform {0 10}
+Warning: Creating virtual clock named 'vclk' with no sources. (UITE-121)
+1
+set_input_delay 0 -clock vclk [all_inputs]
+1
+set power_enable_analysis TRUE
+Information: Checked out license 'PrimePower' (PT-019)
+TRUE
+report_timing -to [all_outputs] -significant_digits 4
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : etm_8_8_etm
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 23:02:36 2020
+****************************************
+
+
+  Startpoint: b[8] (input port clocked by vclk)
+  Endpoint: p[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  b[8] (in)                              0.0000     0.0000 r
+  w8/U62/Y (AND2X1)                      0.0610     0.0610 r
+  w8/a3/HA1/U1/Y (XOR2X1)                0.0726     0.1336 r
+  w8/a3/HA2/U2/Y (AND2X1)                0.0306     0.1642 r
+  w8/a3/U1/Y (OR2X1)                     0.0672     0.2314 r
+  w8/c3/HA1/U1/Y (XOR2X1)                0.0563     0.2877 r
+  w8/c3/HA2/U2/Y (AND2X1)                0.0306     0.3182 r
+  w8/c3/U1/Y (OR2X1)                     0.0671     0.3854 r
+  w8/e3/HA1/U1/Y (XOR2X1)                0.0563     0.4417 r
+  w8/e3/HA2/U2/Y (AND2X1)                0.0306     0.4723 r
+  w8/e3/U1/Y (OR2X1)                     0.0672     0.5395 r
+  w8/f3/U1/Y (XOR2X1)                    0.0563     0.5958 r
+  w8/r1/FA0/HA1/U1/Y (XOR2X1)            0.0733     0.6691 r
+  w8/r1/FA0/HA2/U2/Y (AND2X1)            0.0306     0.6997 r
+  w8/r1/FA0/U1/Y (OR2X1)                 0.0672     0.7669 r
+  w8/r1/FA1/HA2/U2/Y (AND2X1)            0.0406     0.8075 r
+  w8/r1/FA1/U1/Y (OR2X1)                 0.0673     0.8747 r
+  w8/r1/FA2/HA2/U2/Y (AND2X1)            0.0406     0.9153 r
+  w8/r1/FA2/U1/Y (OR2X1)                 0.0673     0.9826 r
+  w8/r1/FA3/HA2/U2/Y (AND2X1)            0.0406     1.0232 r
+  w8/r1/FA3/U1/Y (OR2X1)                 0.0673     1.0904 r
+  w8/r1/FA4/HA2/U2/Y (AND2X1)            0.0406     1.1310 r
+  w8/r1/FA4/U1/Y (OR2X1)                 0.0673     1.1982 r
+  w8/r1/FA5/HA2/U2/Y (AND2X1)            0.0406     1.2388 r
+  w8/r1/FA5/U1/Y (OR2X1)                 0.0673     1.3061 r
+  w8/r1/FA6/HA2/U2/Y (AND2X1)            0.0406     1.3467 r
+  w8/r1/FA6/U1/Y (OR2X1)                 0.0673     1.4139 r
+  w8/r1/FA7/HA2/U2/Y (AND2X1)            0.0406     1.4545 r
+  w8/r1/FA7/U1/Y (OR2X1)                 0.0673     1.5218 r
+  w8/r1/FA8/HA2/U2/Y (AND2X1)            0.0406     1.5623 r
+  w8/r1/FA8/U1/Y (OR2X1)                 0.0673     1.6296 r
+  w8/r1/HA1/U1/Y (XOR2X1)                0.0304     1.6599 r
+  p[31] (out)                            0.0000     1.6599 r
+  data arrival time                                 1.6599
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+report_power -nosplit
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-nosplit
+Design : etm_8_8_etm
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 23:02:36 2020
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           1.931e-05 1.159e-05 8.620e-06 3.952e-05 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 1.159e-05   (29.32%)
+  Cell Internal Power  = 1.931e-05   (48.87%)
+  Cell Leakage Power   = 8.620e-06   (21.81%)
+                         ---------
+Total Power            = 3.952e-05  (100.00%)
+
+1
+exit
+Information: Defining new variable 'active_design'. (CMD-041)
+Information: Defining new variable 'active_design_file'. (CMD-041)
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 925.67 MB
+CPU usage for this session: 5 seconds 
+Elapsed time for this session: 4 seconds
+Diagnostics summary: 1 error, 2 warnings, 10 informationals
+
+Thank you for using pt_shell!
