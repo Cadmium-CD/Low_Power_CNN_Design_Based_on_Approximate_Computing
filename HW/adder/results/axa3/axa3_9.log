@@ -1,0 +1,169 @@
+Loading verilog file '/home/ecelrc/students/xliu4/Highspeed/axa3_9'
+Warning: Ignored 'specify' construct
+	at line 9 in '/home/ecelrc/students/xliu4/Highspeed/axa3_9'. (SVR-24)
+Warning: Ignored 'specify' construct
+	at line 38 in '/home/ecelrc/students/xliu4/Highspeed/axa3_9'. (SVR-24)
+Warning: Ignored 'specify' construct
+	at line 60 in '/home/ecelrc/students/xliu4/Highspeed/axa3_9'. (SVR-24)
+Warning: Ignored 'specify' construct
+	at line 83 in '/home/ecelrc/students/xliu4/Highspeed/axa3_9'. (SVR-24)
+Warning: Design 'axa3_9' (file '/home/ecelrc/students/xliu4/Highspeed/axa3_9') is already registered. Remove the design before rereading. (DBR-003)
+Error: Design is already linked. (DES-067)
+Warning: Creating virtual clock named 'vclk' with no sources. (UITE-121)
+Information: Abandoning fast timing updates. Clock network modified. (PTE-018)
+Information: Invalidating logical update. (PTE-139)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : axa3_9
+Version: O-2018.06-SP5
+Date   : Fri May  1 00:15:16 2020
+****************************************
+
+
+  Startpoint: B[9] (input port clocked by vclk)
+  Endpoint: C[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  B[9] (in)                              0.0000     0.0000 f
+  I9/I28/I4/Y (INVX1)                    0.0089     0.0089 r
+  I9/I28/I1/I0/Y (NAND3X1)               0.0165     0.0254 f
+  I9/I28/I2/I0/Y (NAND3X1)               0.0506     0.0760 r
+  I9/I26/I0/Y (NAND3X1)                  0.0240     0.1000 f
+  I9/I11/I0/Y (NAND3X1)                  0.0722     0.1723 r
+  I10/I26/I0/Y (NAND3X1)                 0.0313     0.2036 f
+  I10/I11/I0/Y (NAND3X1)                 0.0713     0.2749 r
+  I11/I26/I0/Y (NAND3X1)                 0.0313     0.3062 f
+  I11/I11/I0/Y (NAND3X1)                 0.0713     0.3775 r
+  I12/I26/I0/Y (NAND3X1)                 0.0313     0.4088 f
+  I12/I11/I0/Y (NAND3X1)                 0.0713     0.4801 r
+  I13/I26/I0/Y (NAND3X1)                 0.0313     0.5115 f
+  I13/I11/I0/Y (NAND3X1)                 0.0713     0.5827 r
+  I14/I26/I0/Y (NAND3X1)                 0.0313     0.6141 f
+  I14/I11/I0/Y (NAND3X1)                 0.0713     0.6853 r
+  I15/I27/I4/Y (INVX1)                   0.0434     0.7287 f
+  I15/I27/I1/I0/Y (NAND3X1)              0.0451     0.7738 r
+  I15/I27/I2/I0/Y (NAND3X1)              0.0199     0.7937 f
+  C[15] (out)                            0.0000     0.7937 f
+  data arrival time                                 0.7937
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+Warning: The hierarchical cell 'I0/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I0/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I0/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I0/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I0/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I0/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I0/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I1/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I2/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I3/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I4/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I5/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I16/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I17/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M7' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M3' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M4' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M5' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I6/M6' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'I0/M7' is an empty cell (PWR-278)
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-nosplit
+Design : axa3_9
+Version: O-2018.06-SP5
+Date   : Fri May  1 00:15:16 2020
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           1.466e-06 1.563e-06 3.567e-07 3.386e-06 (96.60%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000 1.192e-07    0.0000 1.192e-07 ( 3.40%)  
+
+  Net Switching Power  = 1.683e-06   (48.00%)
+  Cell Internal Power  = 1.466e-06   (41.83%)
+  Cell Leakage Power   = 3.567e-07   (10.17%)
+                         ---------
+Total Power            = 3.505e-06  (100.00%)
+
+1
+1
