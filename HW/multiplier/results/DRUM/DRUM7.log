@@ -1,0 +1,142 @@
+Loading verilog file '/home/ecelrc/students/xliu4/ML/DRUM7_17_u'
+Warning: Design 'DRUM7_17_u' (file '/home/ecelrc/students/xliu4/ML/DRUM7_17_u') is already registered. Remove the design before rereading. (DBR-003)
+Error: Design is already linked. (DES-067)
+Warning: Creating virtual clock named 'vclk' with no sources. (UITE-121)
+Information: Abandoning fast timing updates. Clock network modified. (PTE-018)
+Information: Invalidating logical update. (PTE-139)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : DRUM7_17_u
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 21:03:11 2020
+****************************************
+
+
+  Startpoint: b[15] (input port clocked by vclk)
+  Endpoint: r[29] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  input external delay                                  0.0000     0.0000 r
+  b[15] (in)                                            0.0000     0.0000 r
+  u2/U53/Y (OR2X1)                                      0.0662     0.0662 r
+  u2/U52/Y (INVX1)                                      0.0302     0.0964 f
+  u2/U50/Y (NAND3X1)                                    0.0355     0.1319 r
+  u2/U21/Y (BUFX2)                                      0.0487     0.1806 r
+  u2/U17/Y (OR2X1)                                      0.0482     0.2289 r
+  u2/U18/Y (INVX1)                                      0.0197     0.2486 f
+  u2/U49/Y (NAND3X1)                                    0.0285     0.2771 r
+  u2/U16/Y (BUFX2)                                      0.0435     0.3206 r
+  u2/U48/Y (INVX1)                                      0.0228     0.3434 f
+  u2/U46/Y (NAND3X1)                                    0.0361     0.3795 r
+  u2/U9/Y (BUFX2)                                       0.0453     0.4248 r
+  u2/U45/Y (NOR3X1)                                     0.0322     0.4570 f
+  u2/U34/Y (AND2X1)                                     0.0454     0.5024 f
+  u4/U115/Y (INVX1)                                     0.0307     0.5331 r
+  u4/U114/Y (AND2X1)                                    0.0441     0.5772 r
+  u4/U113/Y (NAND3X1)                                   0.0149     0.5921 f
+  u4/U53/Y (BUFX2)                                      0.0363     0.6284 f
+  u4/U112/Y (INVX1)                                     0.0088     0.6372 r
+  u4/U109/Y (NAND3X1)                                   0.0154     0.6525 f
+  u4/U51/Y (BUFX2)                                      0.0396     0.6921 f
+  u4/U103/Y (INVX1)                                     0.0122     0.7043 r
+  u4/U74/Y (NAND3X1)                                    0.0100     0.7143 f
+  u4/U10/Y (BUFX2)                                      0.0340     0.7483 f
+  u4/U4/Y (OR2X1)                                       0.0461     0.7945 f
+  u4/U29/Y (INVX1)                                      0.0122     0.8066 r
+  u4/U17/Y (OR2X1)                                      0.0363     0.8430 r
+  u4/U18/Y (INVX1)                                      0.0197     0.8627 f
+  u4/U73/Y (NAND3X1)                                    0.0285     0.8912 r
+  u4/U6/Y (BUFX2)                                       0.0337     0.9249 r
+  u4/U72/Y (INVX1)                                      0.0196     0.9446 f
+  u4/U66/Y (NAND3X1)                                    0.0367     0.9813 r
+  u4/U33/Y (BUFX2)                                      0.0601     1.0415 r
+  u6/U2/Y (OR2X1)                                       0.0491     1.0905 r
+  u6/U38/Y (INVX1)                                      0.0462     1.1367 f
+  u6/U55/Y (AOI22X1)                                    0.0493     1.1860 r
+  u6/U19/Y (BUFX2)                                      0.0358     1.2219 r
+  u6/U7/Y (AND2X1)                                      0.0405     1.2624 r
+  u6/U32/Y (INVX1)                                      0.0220     1.2845 f
+  u6/U59/Y (AOI22X1)                                    0.0454     1.3299 r
+  u6/U14/Y (BUFX2)                                      0.0357     1.3656 r
+  u6/U9/Y (AND2X1)                                      0.0284     1.3940 r
+  u6/U31/Y (INVX1)                                      0.0223     1.4163 f
+  U104/Y (MUX2X1)                                       0.0355     1.4518 r
+  U103/Y (INVX1)                                        0.0454     1.4972 f
+  mult_54/U67/Y (AND2X1)                                0.0568     1.5540 f
+  mult_54/U5/Y (AND2X1)                                 0.0593     1.6133 f
+  mult_54/S2_2_1/YC (FAX1)                              0.0922     1.7055 f
+  mult_54/S2_3_1/YC (FAX1)                              0.0920     1.7975 f
+  mult_54/S2_4_1/YC (FAX1)                              0.0920     1.8895 f
+  mult_54/S2_5_1/YC (FAX1)                              0.0920     1.9815 f
+  mult_54/S4_1/YC (FAX1)                                0.0881     2.0696 f
+  mult_54/U15/Y (XOR2X1)                                0.0590     2.1286 r
+  mult_54/FS_1/U19/Y (AND2X1)                           0.0630     2.1916 r
+  mult_54/FS_1/U35/Y (AOI21X1)                          0.0362     2.2278 f
+  mult_54/FS_1/U18/Y (BUFX2)                            0.0382     2.2660 f
+  mult_54/FS_1/U25/Y (INVX1)                            0.0020     2.2681 r
+  mult_54/FS_1/U34/Y (AOI21X1)                          0.0207     2.2887 f
+  mult_54/FS_1/U23/Y (BUFX2)                            0.0397     2.3284 f
+  mult_54/FS_1/U33/Y (OAI21X1)                          0.0593     2.3877 r
+  mult_54/FS_1/U31/Y (AOI21X1)                          0.0377     2.4254 f
+  mult_54/FS_1/U10/Y (BUFX2)                            0.0366     2.4620 f
+  mult_54/FS_1/U26/Y (XNOR2X1)                          0.0343     2.4963 f
+  u7/sll_116/M1_0_13/Y (MUX2X1)                         0.0468     2.5432 r
+  u7/sll_116/U90/Y (INVX1)                              0.0277     2.5708 f
+  u7/sll_116/M1_1_13/Y (MUX2X1)                         0.0452     2.6161 r
+  u7/sll_116/U44/Y (INVX1)                              0.0278     2.6438 f
+  u7/sll_116/M1_2_13/Y (MUX2X1)                         0.0452     2.6891 r
+  u7/sll_116/U34/Y (INVX1)                              0.0279     2.7169 f
+  u7/sll_116/M1_3_13/Y (MUX2X1)                         0.0524     2.7694 r
+  u7/sll_116/U5/Y (INVX1)                               0.0259     2.7953 f
+  u7/sll_116/U74/Y (AND2X1)                             0.0388     2.8341 f
+  r[29] (out)                                           0.0000     2.8341 f
+  data arrival time                                                2.8341
+  ------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+	-nosplit
+Design : DRUM7_17_u
+Version: O-2018.06-SP5
+Date   : Thu Apr 30 21:03:11 2020
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           3.075e-05 2.432e-05 1.028e-05 6.535e-05 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.432e-05   (37.21%)
+  Cell Internal Power  = 3.075e-05   (47.06%)
+  Cell Leakage Power   = 1.028e-05   (15.73%)
+                         ---------
+Total Power            = 6.535e-05  (100.00%)
+
+1
+1
