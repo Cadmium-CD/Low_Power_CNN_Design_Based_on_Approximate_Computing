@@ -50,7 +50,8 @@ def make_layers(cfg, batch_norm=False):
         if v == 'M':
             layers += [nn.MaxPool2d(kernel_size=2, stride=2)]
         else:
-            conv2d = nn.Conv2d(in_channels, v, kernel_size=3, padding=1)
+            #conv2d = nn.Conv2d(in_channels, v, kernel_size=3, padding=1)
+            conv2d = nn.MyConv2d(in_channels, v, kernel_size=3, padding=1)
             if batch_norm:
                 layers += [conv2d, nn.BatchNorm2d(v), nn.ReLU(inplace=True)]
             else:
@@ -66,43 +67,4 @@ cfg = {
     'E': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 256, 'M', 512, 512, 512, 512, 'M', 
           512, 512, 512, 512, 'M'],
 }
-
-
-def vgg11():
-    """VGG 11-layer model (configuration "A")"""
-    return VGG(make_layers(cfg['A']))
-
-
-def vgg11_bn():
-    """VGG 11-layer model (configuration "A") with batch normalization"""
-    return VGG(make_layers(cfg['A'], batch_norm=True))
-
-
-def vgg13():
-    """VGG 13-layer model (configuration "B")"""
-    return VGG(make_layers(cfg['B']))
-
-
-def vgg13_bn():
-    """VGG 13-layer model (configuration "B") with batch normalization"""
-    return VGG(make_layers(cfg['B'], batch_norm=True))
-
-
-def vgg16():
-    """VGG 16-layer model (configuration "D")"""
-    return VGG(make_layers(cfg['D']))
-
-
-def vgg16_bn():
-    """VGG 16-layer model (configuration "D") with batch normalization"""
-    return VGG(make_layers(cfg['D'], batch_norm=True))
-
-
-def vgg19():
-    """VGG 19-layer model (configuration "E")"""
-    return VGG(make_layers(cfg['E']))
-
-
-def vgg19_bn():
-    """VGG 19-layer model (configuration 'E') with batch normalization"""
-    return VGG(make_layers(cfg['E'], batch_norm=True))
+-- VISUAL LINE --                                                                                                 1,4           Top
