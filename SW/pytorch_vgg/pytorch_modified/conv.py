@@ -7,7 +7,7 @@ from .. import init
 from .module import Module
 from .utils import _single, _pair, _triple
 from ..._jit_internal import List
-
+from torch import nn
 
 class _ConvNd(Module):
 
@@ -930,6 +930,7 @@ class ConvTranspose3d(_ConvTransposeMixin, _ConvNd):
         return F.conv_transpose3d(
             input, self.weight, self.bias, self.stride, self.padding,
             output_padding, self.groups, self.dilation)
+
 class MyConv2d(_ConvNd):
     def __init__(self, in_channels, out_channels, kernel_size, stride=1,
                  padding=0, dilation=1, groups=1,
@@ -944,14 +945,44 @@ class MyConv2d(_ConvNd):
 
     def unfold_conv(self, input, weight):
         size = list(input.size())
+        Xunfold = F.unfold(input,kernel_size=self.kernel_size,padding=self.padding)
+
+        #Quantize input
+        scale = 0.001
+        zero_point = 2
+        dtype = torch.qint8
+        qm = nn.quantized.modules.linear.Quantize(scale, zero_point, dtype)
+        quantized_input = qm(Xunfold) 
+
+        #print("input:")
+        #print(Xunfold)
+        #print("qinput:")
+        #print(quantized_input)
+
+        #Quantize weight 
+        quantized_weight = qm(weight.data)
+
+        #print("weight:")
+        #print(weight.data)
+        #print("qweight:")
+        #print(quantized_weight)
+        #Quantize bias
+        #quantized_bias = qm(self.bias.data)
 
         #Xunfold = F.unfold(input, self.kernel_size, self.padding)
-        Xunfold = F.unfold(input,kernel_size=self.kernel_size,padding=self.padding)
-        kernels_flat = weight.data.view(self.out_channels, -1)
+        kernels_flat = quantized_weight.view(self.out_channels, -1)
 
-        res_unfold = kernels_flat @ Xunfold
+        #res_unfold = kernels_flat @ quantized_input
+        dqm = nn.quantized.modules.linear.DeQuantize()
+        kernels_flat_dqm = dqm(kernels_flat)
+        quantized_input_dqm = dqm(quantized_input) 
+        res_unfold = kernels_flat_dqm @ quantized_input_dqm
         res_unfold = res_unfold.view(size[0], self.out_channels, size[2], size[3])
-        res_unfold = res_unfold + self.bias.data.unsqueeze(1).unsqueeze(2).unsqueeze(0);
+        #res_unfold = res_unfold + quantized_bias.unsqueeze(1).unsqueeze(2).unsqueeze(0);
+
+        #Dequantize output
+        #res_dqm = dqm(res_unfold)
+
         #print('res_dimension',res_unfold.size())
         #print('bias',self.bias.size())
 
