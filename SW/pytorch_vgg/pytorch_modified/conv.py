@@ -342,49 +342,7 @@ class Conv2d(_ConvNd):
     def forward(self, input):
         return self.conv2d_forward(input, self.weight)
 
-class MyConv2d(_ConvNd):
-    def __init__(self, in_channels, out_channels, kernel_size, stride=1,
-                 padding=0, dilation=1, groups=1,
-                 bias=True, padding_mode='zeros'):
-        kernel_size = _pair(kernel_size)
-        stride = _pair(stride)
-        padding = _pair(padding)
-        dilation = _pair(dilation)
-        super(MyConv2d, self).__init__(
-            in_channels, out_channels, kernel_size, stride, padding, dilation,
-            False, _pair(0), groups, bias, padding_mode)
 
-    def unfold_conv(self, input, weight):
-        #print(input.type())
-        size = list(input.size())
-        #Xunfold = F.unfold(input, self.kernel_size, self.padding)
-        Xunfold = F.unfold(input,kernel_size=3,padding=1)
-        print('input.size()', input.size())
-        print('Xunfold.size()', Xunfold.size())
-        kernels_flat = weight.data.view(self.out_channels, -1)
-        print('kernels_flat.size()', kernels_flat.size())
-        res_unfold = kernels_flat @ Xunfold
-        res_unfold = res_unfold.view(1, self.out_channels, size[2], size[3])
-        print('res', res_unfold)
-        print('res.size()', res_unfold.size())
-        return res_unfold
-
-    def conv2d_forward(self, input,weight):
-        #ctx.save_for_backward(input,weight,bias=None)
-        
-        return self.unfold_conv(input, weight);
-        '''
-        if self.padding_mode != 'zeros':
-        
-            return F.conv2d(F.pad(input, self._padding_repeated_twice, mode=self.padding_mode),
-                            weight, self.bias, self.stride,
-                            _pair(0), self.dilation, self.groups)
-        return F.conv2d(input, weight, self.bias, self.stride,
-                        self.padding, self.dilation, self.groups)
-        '''
-
-    def forward(self, input):
-        return self.conv2d_forward(input, self.weight)
 
 class Conv3d(_ConvNd):
     r"""Applies a 3D convolution over an input signal composed of several input
@@ -972,6 +930,49 @@ class ConvTranspose3d(_ConvTransposeMixin, _ConvNd):
         return F.conv_transpose3d(
             input, self.weight, self.bias, self.stride, self.padding,
             output_padding, self.groups, self.dilation)
+class MyConv2d(_ConvNd):
+    def __init__(self, in_channels, out_channels, kernel_size, stride=1,
+                 padding=0, dilation=1, groups=1,
+                 bias=True, padding_mode='zeros'):
+        kernel_size = _pair(kernel_size)
+        stride = _pair(stride)
+        padding = _pair(padding)
+        dilation = _pair(dilation)
+        super(MyConv2d, self).__init__(
+            in_channels, out_channels, kernel_size, stride, padding, dilation,
+            False, _pair(0), groups, bias, padding_mode)
+
+    def unfold_conv(self, input, weight):
+        size = list(input.size())
+
+        #Xunfold = F.unfold(input, self.kernel_size, self.padding)
+        Xunfold = F.unfold(input,kernel_size=self.kernel_size,padding=self.padding)
+        kernels_flat = weight.data.view(self.out_channels, -1)
+
+        res_unfold = kernels_flat @ Xunfold
+        res_unfold = res_unfold.view(size[0], self.out_channels, size[2], size[3])
+        res_unfold = res_unfold + self.bias.data.unsqueeze(1).unsqueeze(2).unsqueeze(0);
+        #print('res_dimension',res_unfold.size())
+        #print('bias',self.bias.size())
+
+        return res_unfold
+
+    def conv2d_forward(self, input,weight):
+        #ctx.save_for_backward(input,weight,bias=None)
+
+        return self.unfold_conv(input, weight);
+        '''
+        if self.padding_mode != 'zeros':
+        
+            return F.conv2d(F.pad(input, self._padding_repeated_twice, mode=self.padding_mode),
+                            weight, self.bias, self.stride,
+                            _pair(0), self.dilation, self.groups)
+        return F.conv2d(input, weight, self.bias, self.stride,
+                        self.padding, self.dilation, self.groups)
+        '''
+
+    def forward(self, input):
+        return self.conv2d_forward(input, self.weight)
 
 
 # TODO: Conv2dLocal
