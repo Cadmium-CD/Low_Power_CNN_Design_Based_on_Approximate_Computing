@@ -943,50 +943,87 @@ class MyConv2d(_ConvNd):
             in_channels, out_channels, kernel_size, stride, padding, dilation,
             False, _pair(0), groups, bias, padding_mode)
 
+    def float2fix(self,ft_data,scale):
+        size = list(ft_data.size())
+
+        scale_data = ft_data * scale
+        round_data = scale_data.round()
+ 
+        return round_data.type(torch.int32)  
+
+    def fix2float(self,fx_data,scale):
+        size = list(fx_data.size())
+
+        ft_data = fx_data.float()
+
+        scale_data = ft_data / scale
+ 
+        return scale_data  
+
     def unfold_conv(self, input, weight):
+        
+        #test float/fix
+        test = torch.rand(1, 5)-1
+        print(test)
+        fix = self.float2fix(test,256) 
+        print(fix)
+        exp = test*test
+        fix = fix*fix
+        print(fix)
+        float_data = self.fix2float(fix,65536) 
+        print("exp:",exp)
+        print("act:",float_data)
+
+
         size = list(input.size())
+        #unfold
         Xunfold = F.unfold(input,kernel_size=self.kernel_size,padding=self.padding)
 
-        #Quantize input
+        #define quantizer/dequantizer
         scale = 0.001
         zero_point = 2
         dtype = torch.qint8
-        qm = nn.quantized.modules.linear.Quantize(scale, zero_point, dtype)
-        quantized_input = qm(Xunfold) 
+        #qm = nn.quantized.modules.linear.Quantize(scale, zero_point, dtype)
+        #dqm = nn.quantized.modules.linear.DeQuantize()
 
-        #print("input:")
-        #print(Xunfold)
-        #print("qinput:")
-        #print(quantized_input)
+        #Quantize input
+        #quantized_input = qm(Xunfold) 
+        quantized_input = self.float2fix(Xunfold,256) 
 
+         
         #Quantize weight 
-        quantized_weight = qm(weight.data)
+        #quantized_weight = qm(weight.data)
+        quantized_weight = self.float2fix(weight.data,256)
 
-        #print("weight:")
-        #print(weight.data)
-        #print("qweight:")
-        #print(quantized_weight)
-        #Quantize bias
-        #quantized_bias = qm(self.bias.data)
-
+        #Quantize bias 
+        
         #Xunfold = F.unfold(input, self.kernel_size, self.padding)
         kernels_flat = quantized_weight.view(self.out_channels, -1)
 
-        #res_unfold = kernels_flat @ quantized_input
-        dqm = nn.quantized.modules.linear.DeQuantize()
-        kernels_flat_dqm = dqm(kernels_flat)
-        quantized_input_dqm = dqm(quantized_input) 
-        res_unfold = kernels_flat_dqm @ quantized_input_dqm
+        #kernels_flat_dqm = dqm(kernels_flat)
+        #quantized_input_dqm = dqm(quantized_input) 
+        #res_unfold = kernels_flat_dqm @ quantized_input_dqm
+        
+        #ma#tmul
+        res_unfold = torch.zeros(len(quantized_input),kernels_flat.size(0),quantized_input.size(2))
+
+        for m_batch in range(len(quantized_input)):
+            for i in range(kernels_flat.size(0)):
+                for j in range(quantized_input.size(2)):
+                    for k in range(quantized_input.size(1)):
+                        res_unfold[m_batch][i][j]  += kernels_flat[i][k] * quantized_input[m_batch][k][j]
+        
+        #f ld 
         res_unfold = res_unfold.view(size[0], self.out_channels, size[2], size[3])
+
+        #Add bias
         #res_unfold = res_unfold + quantized_bias.unsqueeze(1).unsqueeze(2).unsqueeze(0);
 
         #Dequantize output
-        #res_dqm = dqm(res_unfold)
+        res_dqm = self.fix2float(res_unfold,65536)
 
-        #print('res_dimension',res_unfold.size())
-        #print('bias',self.bias.size())
 
-        return res_unfold
+        return res_dqm
 
     def conv2d_forward(self, input,weight):
         #ctx.save_for_backward(input,weight,bias=None)

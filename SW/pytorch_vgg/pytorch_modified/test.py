@@ -21,10 +21,11 @@ def run():
     print('')
 
     myconv = nn.MyConv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=3, padding=1, bias=False)
+    myconv.weight = conv.weight
     myout = myconv(X)
-    #print('myout', myout)
-    #print('myout.size()', myout.size())
-    #print('')
+    print('myout', myout)
+    print('myout.size()', myout.size())
+    print('')
 
 '''
     Xunfold = F.unfold(X, kernel_size=3, padding=1)
