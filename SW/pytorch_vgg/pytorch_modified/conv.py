@@ -1,6 +1,7 @@
 # coding=utf-8
 import math
 import torch
+import numpy as np
 from torch.nn.parameter import Parameter
 from .. import functional as F
 from .. import init
@@ -8,6 +9,7 @@ from .module import Module
 from .utils import _single, _pair, _triple
 from ..._jit_internal import List
 from torch import nn
+
 
 class _ConvNd(Module):
 
@@ -340,6 +342,8 @@ class Conv2d(_ConvNd):
                         self.padding, self.dilation, self.groups)
 
     def forward(self, input):
+        print("forwarding")
+        print(input.size())
         return self.conv2d_forward(input, self.weight)
 
 
@@ -939,96 +943,112 @@ class MyConv2d(_ConvNd):
         stride = _pair(stride)
         padding = _pair(padding)
         dilation = _pair(dilation)
+        print("construc myconv2d")
         super(MyConv2d, self).__init__(
             in_channels, out_channels, kernel_size, stride, padding, dilation,
             False, _pair(0), groups, bias, padding_mode)
 
     def float2fix(self,ft_data,scale):
-        size = list(ft_data.size())
 
-        scale_data = ft_data * scale
-        round_data = scale_data.round()
+        ft_data = np.multiply(ft_data , scale)
+        ft_data = np.round(ft_data)
  
-        return round_data.type(torch.int32)  
+        return ft_data.astype(np.int32)  
 
     def fix2float(self,fx_data,scale):
-        size = list(fx_data.size())
 
-        ft_data = fx_data.float()
-
-        scale_data = ft_data / scale
+        fx_data = np.float32(fx_data)/scale
+        #print(fx_data.dtype)
  
-        return scale_data  
+        return fx_data  
 
-    def unfold_conv(self, input, weight):
+
+    def vecmul(self,vec1,vec2):
+        print(vec1.shape)
+        print(vec2.shape)
+        vec2_w = vec2.shape[1]
+        vec1_post = np.array([vec1]) 
+        vec1_t = np.transpose(vec1_post)
+        vec1_cp = np.repeat(vec1_t,vec2_w,axis = 0)
+        product = np.multiply(vec1_t,vec2) 
+        product_sum = np.sum(product,axis=0)
         
-        #test float/fix
-        test = torch.rand(1, 5)-1
-        print(test)
-        fix = self.float2fix(test,256) 
-        print(fix)
-        exp = test*test
-        fix = fix*fix
-        print(fix)
-        float_data = self.fix2float(fix,65536) 
-        print("exp:",exp)
-        print("act:",float_data)
+        return  product_sum 
 
+    def mymatmul(self, filtermap, ifmap):
+        output_np = np.matmul(filtermap , ifmap)
+        return output_np
+
+        #output_np = np.zeros((ifmap.shape[0],filtermap.shape[0],ifmap.shape[2]))
+
+        #for m_batch in range(ifmap.shape[0]):
+        #    for i in range(filtermap.shape[0]):
+        #        output_np[m_batch][i] =self.vecmul(filtermap_np[i,:] , ifmap_np[m_batch,:,:])
+   
+        #return output_np 
+
+    def unfold_conv(self, input):
+        
 
         size = list(input.size())
-        #unfold
+
+        
+        kernels_flat = self.weight.view(self.out_channels, -1)
         Xunfold = F.unfold(input,kernel_size=self.kernel_size,padding=self.padding)
-
-        #define quantizer/dequantizer
-        scale = 0.001
-        zero_point = 2
-        dtype = torch.qint8
-        #qm = nn.quantized.modules.linear.Quantize(scale, zero_point, dtype)
-        #dqm = nn.quantized.modules.linear.DeQuantize()
-
+        filtermap_np = kernels_flat.detach().numpy()
+        ifmap_np = Xunfold.detach().numpy()
+        bias_np = self.bias.data.detach().numpy()
         #Quantize input
-        #quantized_input = qm(Xunfold) 
-        quantized_input = self.float2fix(Xunfold,256) 
-
+        ifmap_np = self.float2fix(ifmap_np,256) 
          
         #Quantize weight 
-        #quantized_weight = qm(weight.data)
-        quantized_weight = self.float2fix(weight.data,256)
+        filtermap_np = self.float2fix(filtermap_np.data,256)
 
         #Quantize bias 
+        if self.bias is not None:
+            bias_np = self.float2fix(bias_np,65536)
         
-        #Xunfold = F.unfold(input, self.kernel_size, self.padding)
-        kernels_flat = quantized_weight.view(self.out_channels, -1)
+        #unfold
 
-        #kernels_flat_dqm = dqm(kernels_flat)
-        #quantized_input_dqm = dqm(quantized_input) 
-        #res_unfold = kernels_flat_dqm @ quantized_input_dqm
         
-        #ma#tmul
-        res_unfold = torch.zeros(len(quantized_input),kernels_flat.size(0),quantized_input.size(2))
-
-        for m_batch in range(len(quantized_input)):
-            for i in range(kernels_flat.size(0)):
-                for j in range(quantized_input.size(2)):
-                    for k in range(quantized_input.size(1)):
-                        res_unfold[m_batch][i][j]  += kernels_flat[i][k] * quantized_input[m_batch][k][j]
+        #matmul
+        #res_unfold = np.zeros(len((quantized_input),kernels_flat.size(0),quantized_input.size(2)))
         
-        #f ld 
-        res_unfold = res_unfold.view(size[0], self.out_channels, size[2], size[3])
+        res_unfold = self.mymatmul(filtermap_np , ifmap_np)
+        #for m_batch in range(len(quantized_input)):
+        #    for i in range(kernels_flat.size(0)):
+        #        for j in range(quantized_input.size(2)):
+        #            for k in range(quantized_input.size(1)):
+        #                res_unfold[m_batch][i][j]  += kernels_flat[i][k] * quantized_input[m_batch][k][j]
+        
 
         #Add bias
-        #res_unfold = res_unfold + quantized_bias.unsqueeze(1).unsqueeze(2).unsqueeze(0);
+        if self.bias is not None:
+            bias_np = np.expand_dims(np.expand_dims(bias_np,axis=1),axis=0)
+            res_unfold = res_unfold + bias_np 
 
-        #Dequantize output
-        res_dqm = self.fix2float(res_unfold,65536)
+        #fix2float
+        res_unfold = self.fix2float(res_unfold,65536)
+        output_tensor = torch.from_numpy(res_unfold)
 
+        #f ld 
+        output_tensor = output_tensor.view(size[0], self.out_channels, size[2], size[3]).type(torch.float32)
 
-        return res_dqm
+        #detach and del
+        Xunfold.detach()
+        kernels_flat.detach()
+        del filtermap_np
+        del ifmap_np
+        if self.bias is not None:
+            del bias_np
+        del res_unfold
 
-    def conv2d_forward(self, input,weight):
+        return output_tensor 
+
+    def conv2d_forward(self, input):
         #ctx.save_for_backward(input,weight,bias=None)
 
-        return self.unfold_conv(input, weight);
+        return self.unfold_conv(input);
         '''
         if self.padding_mode != 'zeros':
         
@@ -1040,7 +1060,8 @@ class MyConv2d(_ConvNd):
         '''
 
     def forward(self, input):
-        return self.conv2d_forward(input, self.weight)
+        print("forwarding",flush=True)
+        return self.conv2d_forward(input)
 
 
 # TODO: Conv2dLocal
