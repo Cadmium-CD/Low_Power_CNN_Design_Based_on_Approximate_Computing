@@ -990,11 +990,11 @@ class MyConv2d(_ConvNd):
         kernelmap = np.tile(kernelmap,batch_size)
         ifmap     = np.tile(ifmap,kernel_h)
         ifmap     = ifmap.transpose([1,0,2]).reshape(ifmap.shape[1],-1)
-        print("mul...")
+        #print("mul...")
         product = np.multiply(kernelmap,ifmap) 
-        print("sum...")
+        #print("sum...")
         product = np.sum(product,axis=0)
-        print("reshape...")
+        #print("reshape...")
         product = np.reshape(product,(batch_size,kernel_h,ifmap_w))
 
         return  product 
