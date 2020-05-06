@@ -963,29 +963,50 @@ class MyConv2d(_ConvNd):
         return fx_data  
 
 
-    def vecmul(self,vec1,vec2):
-        print(vec1.shape)
-        print(vec2.shape)
-        vec2_w = vec2.shape[1]
-        vec1_post = np.array([vec1]) 
-        vec1_t = np.transpose(vec1_post)
-        vec1_cp = np.repeat(vec1_t,vec2_w,axis = 0)
-        product = np.multiply(vec1_t,vec2) 
-        product_sum = np.sum(product,axis=0)
-        
-        return  product_sum 
+    def vecmul(self,kernelmap,ifmap):
+        #ifmap_w = ifmap.shape[2]
+        #kernel_h = kernelmap.shape[0]
+        #batch_size = ifmap.shape[0] 
+        #kernelmap = np.repeat(kernelmap,ifmap_w,axis = 0)
+        #kernelmap = np.transpose(kernelmap)
+        #product = np.zeros((batch_size,kernel_h,ifmap_w))
+        #for m_batch in range(batch_size):
+        #    if m_batch % 16 == 0:
+        #        print("batch: ", m_batch)
+        #    temp  = ifmap[m_batch,:,:] 
+        #    temp = np.tile(temp,kernel_h)
+        #    temp = np.multiply(kernelmap,temp) 
+        #    temp = np.sum(temp,axis=0)
+        #    product[m_batch] = np.reshape(temp,(kernel_h,ifmap_w))
+        #
+        #del temp
+        #return  product 
 
+        ifmap_w = ifmap.shape[2]
+        kernel_h = kernelmap.shape[0]
+        batch_size = ifmap.shape[0] 
+        kernelmap = np.repeat(kernelmap,ifmap_w,axis = 0)
+        kernelmap = np.transpose(kernelmap)
+        kernelmap = np.tile(kernelmap,batch_size)
+        ifmap     = np.tile(ifmap,kernel_h)
+        ifmap     = ifmap.transpose([1,0,2]).reshape(ifmap.shape[1],-1)
+        print("mul...")
+        product = np.multiply(kernelmap,ifmap) 
+        print("sum...")
+        product = np.sum(product,axis=0)
+        print("reshape...")
+        product = np.reshape(product,(batch_size,kernel_h,ifmap_w))
+
+        return  product 
     def mymatmul(self, filtermap, ifmap):
-        output_np = np.matmul(filtermap , ifmap)
-        return output_np
+        #output_np = np.matmul(filtermap , ifmap)
+        #return output_np
 
         #output_np = np.zeros((ifmap.shape[0],filtermap.shape[0],ifmap.shape[2]))
 
-        #for m_batch in range(ifmap.shape[0]):
-        #    for i in range(filtermap.shape[0]):
-        #        output_np[m_batch][i] =self.vecmul(filtermap_np[i,:] , ifmap_np[m_batch,:,:])
+        output_np=self.vecmul(filtermap , ifmap)
    
-        #return output_np 
+        return output_np 
 
     def unfold_conv(self, input):
         
