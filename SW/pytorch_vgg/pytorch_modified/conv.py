@@ -962,6 +962,45 @@ class MyConv2d(_ConvNd):
  
         return fx_data  
 
+    def add_loa(self, mul_res):
+        #print(mul_res.shape)
+        mask_mat = np.ones(shape=mul_res.shape, dtype=np.int32) #create mask for bit 0
+        temp1 = np.bitwise_and(mul_res, mask_mat) #mask bit 0
+        add_res = np.sum(temp1, axis=0) #sum bit 0
+        add_res = np.where(add_res>0, 1, 0) #bit 0 finish
+        mask_mat = np.left_shift(mask_mat, 1) #create mask for bit 1
+        temp1 = np.bitwise_and(mul_res, mask_mat) #mask bit 1
+        add_res_temp = np.sum(temp1, axis=0) #sum bit 1
+        add_res = np.where(add_res_temp>0, add_res+2, add_res+0) #bit 0 finish
+        mask_mat = np.left_shift(mask_mat, 1) #create mask for bit 2
+        temp1 = np.bitwise_and(mul_res, mask_mat) #mask bit 2
+        add_res_temp = np.sum(temp1, axis=0) #sum bit 2
+        add_res = np.where(add_res_temp>0, add_res+4, add_res+0) #bit 2 finish
+        mask_mat = np.left_shift(mask_mat, 1) #create mask for bit 3
+        temp1 = np.bitwise_and(mul_res, mask_mat) #mask bit 3
+        add_res_temp = np.sum(temp1, axis=0) #sum bit 3
+        add_res = np.where(add_res_temp>0, add_res+8, add_res+0) #bit 3 finish
+        
+        #create cin sum for adder   
+        add_res_temp = np.where(add_res_temp>0, add_res_temp-8, 0) #cin sum = sum bit 3 - 1
+        add_res_temp = np.left_shift(add_res_temp, 1) #shift cin sum to bit-4 base
+
+        #accurate adder
+        mul_res = np.bitwise_and(mul_res, -16) #mask lower 4 bits with 0xFFFFFFF0 
+        acc_add_res = np.sum(mul_res, axis=0) #accurate sum
+        acc_add_res = np.add(acc_add_res, add_res_temp) #add cin sum
+        add_res = np.add(add_res, acc_add_res) #add the result of OR part
+        #print("approximate result")
+        #print(add_res)
+
+        #delete matric
+        del mask_mat
+        del temp1
+        del mul_res
+        del add_res_temp
+        
+        return add_res
+
 
     def vecmul(self,kernelmap,ifmap):
         #ifmap_w = ifmap.shape[2]
@@ -993,11 +1032,18 @@ class MyConv2d(_ConvNd):
         #print("mul...")
         product = np.multiply(kernelmap,ifmap) 
         #print("sum...")
-        product = np.sum(product,axis=0)
+        product = self.add_loa(product)
         #print("reshape...")
         product = np.reshape(product,(batch_size,kernel_h,ifmap_w))
 
         return  product 
+        '''
+        #print("mul...")
+        product = np.multiply(kernelmap,ifmap) 
+        #print("sum...")
+        product = np.sum(product,axis=0)
+        '''
+
     def mymatmul(self, filtermap, ifmap):
         #output_np = np.matmul(filtermap , ifmap)
         #return output_np
