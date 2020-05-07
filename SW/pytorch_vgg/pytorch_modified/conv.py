@@ -1035,11 +1035,9 @@ class MyConv2d(_ConvNd):
         mul_in_a = np.where(mul_in_a<0,abs(mul_in_a),mul_in_a)
         mul_in_b = np.where(mul_in_b<0,abs(mul_in_b),mul_in_b)
         
-        mask_1 = np.full(mul_in_a.shape,0x7ff0)
-        par_a = np.bitwise_and(mul_in_a,mask_1)
-        par_b = np.bitwise_and(mul_in_b,mask_1)
+        par_a = np.bitwise_and(mul_in_a,0x7ff0)
+        par_b = np.bitwise_and(mul_in_b,0x7ff0)
         par_re = np.multiply(par_a,par_b)
-        
         
         par_a = np.left_shift(mul_in_a,4)
         par_b = np.left_shift(mul_in_b,4)
@@ -1055,19 +1053,12 @@ class MyConv2d(_ConvNd):
         par_c_6 = np.bitwise_or(par_c_7>>1,par_c_6)
         par_c_5 = np.bitwise_or(par_c_6>>1,par_c_5)
         par_c_4 = np.bitwise_or(par_c_5>>1,par_c_4)
-        par_c_3 = np.where(par_c_4<1,0,8)
-        par_c_2 = np.right_shift(par_c_3,1)
-        par_c_1 = np.right_shift(par_c_3,2)
-        par_c_0 = np.right_shift(par_c_3,4)
-        
+        par_c_4 = np.where(par_c_4<1,0,31)
+
         par_re = np.bitwise_or(par_re,par_c_7)
         par_re = np.bitwise_or(par_re,par_c_6)
         par_re = np.bitwise_or(par_re,par_c_5)
         par_re = np.bitwise_or(par_re,par_c_4)
-        par_re = np.bitwise_or(par_re,par_c_3)
-        par_re = np.bitwise_or(par_re,par_c_2)
-        par_re = np.bitwise_or(par_re,par_c_1)
-        par_re = np.bitwise_or(par_re,par_c_0)
         par_re = np.where(sign==0,par_re,~par_re+1)
 
         #delete matric
@@ -1079,10 +1070,6 @@ class MyConv2d(_ConvNd):
         del par_c_6
         del par_c_5
         del par_c_4
-        del par_c_3
-        del par_c_2
-        del par_c_1
-        del par_c_0
         del sign_a 
         del sign_b 
         del sign
