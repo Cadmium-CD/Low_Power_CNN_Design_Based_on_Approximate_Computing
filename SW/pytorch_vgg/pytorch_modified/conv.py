@@ -342,7 +342,6 @@ class Conv2d(_ConvNd):
                         self.padding, self.dilation, self.groups)
 
     def forward(self, input):
-        print("forwarding")
         print(input.size())
         return self.conv2d_forward(input, self.weight)
 
@@ -943,7 +942,6 @@ class MyConv2d(_ConvNd):
         stride = _pair(stride)
         padding = _pair(padding)
         dilation = _pair(dilation)
-        print("construc myconv2d")
         super(MyConv2d, self).__init__(
             in_channels, out_channels, kernel_size, stride, padding, dilation,
             False, _pair(0), groups, bias, padding_mode)
@@ -1256,7 +1254,6 @@ class MyConv2d(_ConvNd):
         '''
 
     def forward(self, input):
-        print("forwarding",flush=True)
         return self.conv2d_forward(input)
 
 

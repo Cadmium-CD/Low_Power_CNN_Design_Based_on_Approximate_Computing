@@ -268,7 +268,7 @@ def validate(val_loader, model, criterion):
                   'Loss {loss.val:.4f} ({loss.avg:.4f})\t'
                   'Prec@1 {top1.val:.3f} ({top1.avg:.3f})'.format(
                       i, len(val_loader), batch_time=batch_time, loss=losses,
-                      top1=top1))
+                      top1=top1) ,flush = True)
         if (i+1) % args.testsize == 0:
             break;
 

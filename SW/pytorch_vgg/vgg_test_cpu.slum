@@ -10,7 +10,7 @@
 #SBATCH -p skx-normal                   # Queue (partition) name
 #SBATCH -N 1                            # Total # of nodes (must be 1 for serial)
 #SBATCH -n 1                            # Total # of mpi tasks (should be 1 for serial)
-#SBATCH -t 00:10:00                     # Run time (hh:mm:ss)
+#SBATCH -t 02:00:00                     # Run time (hh:mm:ss)
 #SBATCH --mail-user=dicheng@utexas.edu
 #SBATCH --mail-type=all                 # Send email at begin and end of job (can assign begin or end as well)
 #SBATCH -A Hardware-Acceleratio         # Allocation name (req'd if you have more than 1)
@@ -22,8 +22,8 @@ source $WORK/pro_inference/bin/activate
 
 # Launch code...
 
-python main.py --resume=./model_best_cpu.pth.tar -e --cpu -p 1 -i 0  -ts 5 -b 1  > adder_loa_mul_eta_c_0_ts_test_bs_1 
-#python main.py --resume=./model_best_cpu.pth.tar -e --cpu -p 1 -i 0  -ts 100 -b 1  > ../results/adder_loa_mul_eta/adder_loa_mul_eta_c_0_ts_100_bs_1 
+#python main.py --resume=./model_best_cpu.pth.tar -e --cpu -p 1 -i 0  -ts 5 -b 1  > adder_loa_mul_eta_c_0_ts_test1_bs_1 
+python main.py --resume=./model_best_cpu.pth.tar -e --cpu -p 1 -i 9  -ts 100 -b 1  > ../results/adder_loa_mul_eta/adder_loa_mul_eta_c_9_ts_100_bs_1 
 #python test_version.py  > $WORK/vgg_cifar10_code/logfile
 #./run.sh  > $WORK/vgg_cifar10_code/logfile
 #python main.py  --arch=vgg11  --save-dir=save_vgg11_only |& tee -a log_vgg11_only
