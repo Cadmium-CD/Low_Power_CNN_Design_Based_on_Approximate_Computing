@@ -1093,7 +1093,6 @@ class MyConv2d(_ConvNd):
         return par_re
 
     def add_loa(self, mul_res):
-        print("aprox adding")
         mask_mat = np.ones(shape=mul_res.shape, dtype=np.int32) #create mask for bit 0
         temp1 = np.bitwise_and(mul_res, mask_mat) #mask bit 0
         add_res = np.sum(temp1, axis=0) #sum bit 0
@@ -1161,10 +1160,8 @@ class MyConv2d(_ConvNd):
         ifmap     = ifmap.transpose([1,0,2]).reshape(ifmap.shape[1],-1)
         #print("mul...")
         product = self.mul_eta(kernelmap,ifmap) 
-        print(product.shape)
         #print("sum...")
         product = self.add_loa(product)
-        print(product.shape)
         #print("reshape...")
         product = np.reshape(product,(batch_size,kernel_h,ifmap_w))
 
