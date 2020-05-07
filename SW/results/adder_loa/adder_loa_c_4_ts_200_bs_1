@@ -1,0 +1,6621 @@
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+construc myconv2d
+=> loading checkpoint './model_best_cpu.pth.tar'
+=> loaded checkpoint 'True' (epoch 233)
+Files already downloaded and verified
+1000
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [0/1000]	Time 10.977 (10.977)	Loss 0.0001 (0.0001)	Prec@1 100.000 (100.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [1/1000]	Time 10.738 (10.858)	Loss 0.1117 (0.0559)	Prec@1 100.000 (100.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [2/1000]	Time 10.735 (10.817)	Loss 3.8973 (1.3363)	Prec@1 0.000 (66.667)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [3/1000]	Time 10.738 (10.797)	Loss 0.0000 (1.0023)	Prec@1 100.000 (75.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [4/1000]	Time 10.802 (10.798)	Loss 0.0000 (0.8018)	Prec@1 100.000 (80.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [5/1000]	Time 10.837 (10.805)	Loss 2.7520 (1.1268)	Prec@1 0.000 (66.667)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [6/1000]	Time 10.797 (10.803)	Loss 0.0005 (0.9659)	Prec@1 100.000 (71.429)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [7/1000]	Time 10.803 (10.803)	Loss 0.0000 (0.8452)	Prec@1 100.000 (75.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [8/1000]	Time 10.803 (10.803)	Loss 0.0000 (0.7513)	Prec@1 100.000 (77.778)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [9/1000]	Time 10.785 (10.801)	Loss 0.0001 (0.6762)	Prec@1 100.000 (80.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [10/1000]	Time 10.778 (10.799)	Loss 0.0000 (0.6147)	Prec@1 100.000 (81.818)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [11/1000]	Time 10.772 (10.797)	Loss 0.0000 (0.5635)	Prec@1 100.000 (83.333)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [12/1000]	Time 10.785 (10.796)	Loss 0.1237 (0.5296)	Prec@1 100.000 (84.615)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [13/1000]	Time 10.779 (10.795)	Loss 0.0000 (0.4918)	Prec@1 100.000 (85.714)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [14/1000]	Time 10.756 (10.792)	Loss 2.3513 (0.6158)	Prec@1 0.000 (80.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [15/1000]	Time 10.749 (10.790)	Loss 0.0003 (0.5773)	Prec@1 100.000 (81.250)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [16/1000]	Time 10.754 (10.788)	Loss 0.0553 (0.5466)	Prec@1 100.000 (82.353)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [17/1000]	Time 10.755 (10.786)	Loss 0.0000 (0.5162)	Prec@1 100.000 (83.333)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [18/1000]	Time 10.749 (10.784)	Loss 0.0000 (0.4891)	Prec@1 100.000 (84.211)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [19/1000]	Time 10.782 (10.784)	Loss 0.0000 (0.4646)	Prec@1 100.000 (85.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [20/1000]	Time 10.763 (10.783)	Loss 0.0000 (0.4425)	Prec@1 100.000 (85.714)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [21/1000]	Time 10.760 (10.782)	Loss 0.0043 (0.4226)	Prec@1 100.000 (86.364)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [22/1000]	Time 10.753 (10.780)	Loss 0.0017 (0.4043)	Prec@1 100.000 (86.957)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [23/1000]	Time 10.760 (10.780)	Loss 1.8974 (0.4665)	Prec@1 0.000 (83.333)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [24/1000]	Time 10.746 (10.778)	Loss 0.0000 (0.4478)	Prec@1 100.000 (84.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [25/1000]	Time 10.754 (10.777)	Loss 0.0000 (0.4306)	Prec@1 100.000 (84.615)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [26/1000]	Time 10.773 (10.777)	Loss 0.0000 (0.4147)	Prec@1 100.000 (85.185)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [27/1000]	Time 11.603 (10.807)	Loss 0.0006 (0.3999)	Prec@1 100.000 (85.714)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [28/1000]	Time 11.738 (10.839)	Loss 5.2659 (0.5677)	Prec@1 0.000 (82.759)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [29/1000]	Time 11.737 (10.869)	Loss 0.0001 (0.5487)	Prec@1 100.000 (83.333)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [30/1000]	Time 11.744 (10.897)	Loss 0.0001 (0.5310)	Prec@1 100.000 (83.871)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [31/1000]	Time 11.737 (10.923)	Loss 0.0000 (0.5144)	Prec@1 100.000 (84.375)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [32/1000]	Time 11.742 (10.948)	Loss 0.0001 (0.4989)	Prec@1 100.000 (84.848)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [33/1000]	Time 11.753 (10.972)	Loss 0.0042 (0.4843)	Prec@1 100.000 (85.294)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [34/1000]	Time 11.744 (10.994)	Loss 0.0000 (0.4705)	Prec@1 100.000 (85.714)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [35/1000]	Time 11.748 (11.015)	Loss 0.4377 (0.4696)	Prec@1 100.000 (86.111)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [36/1000]	Time 11.745 (11.034)	Loss 0.0000 (0.4569)	Prec@1 100.000 (86.486)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [37/1000]	Time 11.729 (11.053)	Loss 0.0000 (0.4449)	Prec@1 100.000 (86.842)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [38/1000]	Time 11.741 (11.070)	Loss 0.0000 (0.4334)	Prec@1 100.000 (87.179)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [39/1000]	Time 11.733 (11.087)	Loss 0.0000 (0.4226)	Prec@1 100.000 (87.500)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [40/1000]	Time 11.746 (11.103)	Loss 0.0000 (0.4123)	Prec@1 100.000 (87.805)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [41/1000]	Time 11.738 (11.118)	Loss 0.0000 (0.4025)	Prec@1 100.000 (88.095)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [42/1000]	Time 11.744 (11.133)	Loss 0.0000 (0.3931)	Prec@1 100.000 (88.372)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [43/1000]	Time 11.596 (11.143)	Loss 0.0000 (0.3842)	Prec@1 100.000 (88.636)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [44/1000]	Time 11.457 (11.150)	Loss 0.0000 (0.3757)	Prec@1 100.000 (88.889)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [45/1000]	Time 11.484 (11.157)	Loss 0.0000 (0.3675)	Prec@1 100.000 (89.130)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [46/1000]	Time 11.479 (11.164)	Loss 0.0000 (0.3597)	Prec@1 100.000 (89.362)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [47/1000]	Time 11.438 (11.170)	Loss 0.0000 (0.3522)	Prec@1 100.000 (89.583)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [48/1000]	Time 11.443 (11.176)	Loss 0.0001 (0.3450)	Prec@1 100.000 (89.796)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [49/1000]	Time 11.436 (11.181)	Loss 0.0001 (0.3381)	Prec@1 100.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [50/1000]	Time 11.452 (11.186)	Loss 0.0000 (0.3315)	Prec@1 100.000 (90.196)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [51/1000]	Time 11.445 (11.191)	Loss 0.0003 (0.3251)	Prec@1 100.000 (90.385)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [52/1000]	Time 11.482 (11.197)	Loss 0.0000 (0.3190)	Prec@1 100.000 (90.566)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [53/1000]	Time 11.231 (11.197)	Loss 0.0000 (0.3131)	Prec@1 100.000 (90.741)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [54/1000]	Time 11.090 (11.195)	Loss 0.0019 (0.3074)	Prec@1 100.000 (90.909)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [55/1000]	Time 11.095 (11.193)	Loss 0.0000 (0.3019)	Prec@1 100.000 (91.071)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [56/1000]	Time 11.100 (11.192)	Loss 0.0001 (0.2966)	Prec@1 100.000 (91.228)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [57/1000]	Time 11.102 (11.190)	Loss 0.0003 (0.2915)	Prec@1 100.000 (91.379)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [58/1000]	Time 11.087 (11.188)	Loss 0.0001 (0.2866)	Prec@1 100.000 (91.525)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [59/1000]	Time 11.114 (11.187)	Loss 0.0000 (0.2818)	Prec@1 100.000 (91.667)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [60/1000]	Time 11.086 (11.186)	Loss 0.0000 (0.2772)	Prec@1 100.000 (91.803)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [61/1000]	Time 11.086 (11.184)	Loss 0.0000 (0.2727)	Prec@1 100.000 (91.935)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [62/1000]	Time 11.094 (11.183)	Loss 0.0057 (0.2685)	Prec@1 100.000 (92.063)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [63/1000]	Time 11.094 (11.181)	Loss 0.0000 (0.2643)	Prec@1 100.000 (92.188)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [64/1000]	Time 11.114 (11.180)	Loss 0.0001 (0.2602)	Prec@1 100.000 (92.308)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [65/1000]	Time 11.114 (11.179)	Loss 1.1597 (0.2738)	Prec@1 0.000 (90.909)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [66/1000]	Time 11.079 (11.178)	Loss 0.0000 (0.2697)	Prec@1 100.000 (91.045)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [67/1000]	Time 11.077 (11.176)	Loss 0.0000 (0.2658)	Prec@1 100.000 (91.176)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [68/1000]	Time 11.077 (11.175)	Loss 0.0002 (0.2619)	Prec@1 100.000 (91.304)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [69/1000]	Time 11.078 (11.173)	Loss 7.7889 (0.3695)	Prec@1 0.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [70/1000]	Time 11.080 (11.172)	Loss 0.0002 (0.3643)	Prec@1 100.000 (90.141)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [71/1000]	Time 11.071 (11.171)	Loss 0.0000 (0.3592)	Prec@1 100.000 (90.278)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [72/1000]	Time 11.082 (11.169)	Loss 0.0000 (0.3543)	Prec@1 100.000 (90.411)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [73/1000]	Time 11.072 (11.168)	Loss 0.0000 (0.3495)	Prec@1 100.000 (90.541)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [74/1000]	Time 11.072 (11.167)	Loss 0.0008 (0.3448)	Prec@1 100.000 (90.667)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [75/1000]	Time 11.073 (11.166)	Loss 2.6730 (0.3755)	Prec@1 0.000 (89.474)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [76/1000]	Time 11.067 (11.164)	Loss 0.0000 (0.3706)	Prec@1 100.000 (89.610)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [77/1000]	Time 11.074 (11.163)	Loss 0.0054 (0.3659)	Prec@1 100.000 (89.744)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [78/1000]	Time 11.069 (11.162)	Loss 0.0000 (0.3613)	Prec@1 100.000 (89.873)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [79/1000]	Time 11.117 (11.161)	Loss 0.0000 (0.3568)	Prec@1 100.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [80/1000]	Time 11.224 (11.162)	Loss 0.0000 (0.3524)	Prec@1 100.000 (90.123)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [81/1000]	Time 11.083 (11.161)	Loss 0.0000 (0.3481)	Prec@1 100.000 (90.244)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [82/1000]	Time 11.103 (11.160)	Loss 0.0000 (0.3439)	Prec@1 100.000 (90.361)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [83/1000]	Time 11.086 (11.160)	Loss 0.0000 (0.3398)	Prec@1 100.000 (90.476)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [84/1000]	Time 11.077 (11.159)	Loss 0.0000 (0.3358)	Prec@1 100.000 (90.588)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [85/1000]	Time 11.070 (11.158)	Loss 0.5439 (0.3382)	Prec@1 100.000 (90.698)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [86/1000]	Time 11.112 (11.157)	Loss 0.0000 (0.3343)	Prec@1 100.000 (90.805)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [87/1000]	Time 11.063 (11.156)	Loss 0.0000 (0.3305)	Prec@1 100.000 (90.909)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [88/1000]	Time 11.068 (11.155)	Loss 0.0000 (0.3268)	Prec@1 100.000 (91.011)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [89/1000]	Time 11.071 (11.154)	Loss 2.1178 (0.3467)	Prec@1 0.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [90/1000]	Time 11.080 (11.153)	Loss 0.0000 (0.3429)	Prec@1 100.000 (90.110)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [91/1000]	Time 11.082 (11.152)	Loss 0.0000 (0.3392)	Prec@1 100.000 (90.217)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [92/1000]	Time 11.074 (11.152)	Loss 0.0360 (0.3359)	Prec@1 100.000 (90.323)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [93/1000]	Time 11.085 (11.151)	Loss 0.0000 (0.3323)	Prec@1 100.000 (90.426)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [94/1000]	Time 11.080 (11.150)	Loss 0.0000 (0.3288)	Prec@1 100.000 (90.526)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [95/1000]	Time 11.081 (11.149)	Loss 0.0000 (0.3254)	Prec@1 100.000 (90.625)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [96/1000]	Time 11.067 (11.149)	Loss 0.0004 (0.3221)	Prec@1 100.000 (90.722)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [97/1000]	Time 11.070 (11.148)	Loss 1.5270 (0.3344)	Prec@1 0.000 (89.796)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [98/1000]	Time 11.071 (11.147)	Loss 0.0000 (0.3310)	Prec@1 100.000 (89.899)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [99/1000]	Time 11.119 (11.147)	Loss 0.0000 (0.3277)	Prec@1 100.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [100/1000]	Time 11.072 (11.146)	Loss 0.0000 (0.3244)	Prec@1 100.000 (90.099)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [101/1000]	Time 11.070 (11.145)	Loss 5.4296 (0.3745)	Prec@1 0.000 (89.216)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [102/1000]	Time 11.072 (11.145)	Loss 0.0000 (0.3708)	Prec@1 100.000 (89.320)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [103/1000]	Time 11.082 (11.144)	Loss 0.0000 (0.3673)	Prec@1 100.000 (89.423)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [104/1000]	Time 11.111 (11.144)	Loss 0.0000 (0.3638)	Prec@1 100.000 (89.524)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [105/1000]	Time 11.089 (11.143)	Loss 1.7478 (0.3768)	Prec@1 0.000 (88.679)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [106/1000]	Time 11.107 (11.143)	Loss 0.0000 (0.3733)	Prec@1 100.000 (88.785)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [107/1000]	Time 11.267 (11.144)	Loss 0.0000 (0.3699)	Prec@1 100.000 (88.889)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [108/1000]	Time 11.217 (11.145)	Loss 0.0000 (0.3665)	Prec@1 100.000 (88.991)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [109/1000]	Time 11.204 (11.145)	Loss 0.0000 (0.3631)	Prec@1 100.000 (89.091)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [110/1000]	Time 11.211 (11.146)	Loss 0.0078 (0.3599)	Prec@1 100.000 (89.189)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [111/1000]	Time 11.206 (11.146)	Loss 0.0043 (0.3567)	Prec@1 100.000 (89.286)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [112/1000]	Time 11.223 (11.147)	Loss 1.1386 (0.3637)	Prec@1 0.000 (88.496)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [113/1000]	Time 11.148 (11.147)	Loss 0.0001 (0.3605)	Prec@1 100.000 (88.596)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [114/1000]	Time 11.080 (11.146)	Loss 0.0013 (0.3574)	Prec@1 100.000 (88.696)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [115/1000]	Time 11.086 (11.146)	Loss 0.2754 (0.3566)	Prec@1 100.000 (88.793)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [116/1000]	Time 11.081 (11.145)	Loss 0.0000 (0.3536)	Prec@1 100.000 (88.889)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [117/1000]	Time 11.082 (11.145)	Loss 0.0000 (0.3506)	Prec@1 100.000 (88.983)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [118/1000]	Time 11.089 (11.144)	Loss 0.0000 (0.3477)	Prec@1 100.000 (89.076)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [119/1000]	Time 11.108 (11.144)	Loss 0.0000 (0.3448)	Prec@1 100.000 (89.167)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [120/1000]	Time 11.082 (11.143)	Loss 0.0000 (0.3419)	Prec@1 100.000 (89.256)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [121/1000]	Time 11.088 (11.143)	Loss 0.0000 (0.3391)	Prec@1 100.000 (89.344)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [122/1000]	Time 11.090 (11.143)	Loss 0.0001 (0.3364)	Prec@1 100.000 (89.431)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [123/1000]	Time 11.087 (11.142)	Loss 0.0000 (0.3336)	Prec@1 100.000 (89.516)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [124/1000]	Time 11.087 (11.142)	Loss 0.0000 (0.3310)	Prec@1 100.000 (89.600)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [125/1000]	Time 11.290 (11.143)	Loss 4.1967 (0.3617)	Prec@1 0.000 (88.889)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [126/1000]	Time 10.948 (11.141)	Loss 0.0000 (0.3588)	Prec@1 100.000 (88.976)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [127/1000]	Time 10.890 (11.139)	Loss 0.0001 (0.3560)	Prec@1 100.000 (89.062)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [128/1000]	Time 10.882 (11.137)	Loss 0.0000 (0.3532)	Prec@1 100.000 (89.147)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [129/1000]	Time 10.872 (11.135)	Loss 0.0000 (0.3505)	Prec@1 100.000 (89.231)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [130/1000]	Time 10.863 (11.133)	Loss 0.0000 (0.3478)	Prec@1 100.000 (89.313)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [131/1000]	Time 10.850 (11.131)	Loss 0.0000 (0.3452)	Prec@1 100.000 (89.394)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [132/1000]	Time 10.849 (11.129)	Loss 0.0001 (0.3426)	Prec@1 100.000 (89.474)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [133/1000]	Time 10.868 (11.127)	Loss 0.0000 (0.3401)	Prec@1 100.000 (89.552)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [134/1000]	Time 11.057 (11.127)	Loss 0.0023 (0.3376)	Prec@1 100.000 (89.630)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [135/1000]	Time 10.950 (11.125)	Loss 0.0000 (0.3351)	Prec@1 100.000 (89.706)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [136/1000]	Time 10.947 (11.124)	Loss 0.0002 (0.3326)	Prec@1 100.000 (89.781)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [137/1000]	Time 10.955 (11.123)	Loss 0.0148 (0.3303)	Prec@1 100.000 (89.855)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [138/1000]	Time 10.949 (11.121)	Loss 0.0019 (0.3280)	Prec@1 100.000 (89.928)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [139/1000]	Time 10.944 (11.120)	Loss 0.0000 (0.3256)	Prec@1 100.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [140/1000]	Time 10.947 (11.119)	Loss 0.0000 (0.3233)	Prec@1 100.000 (90.071)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [141/1000]	Time 10.851 (11.117)	Loss 0.0000 (0.3210)	Prec@1 100.000 (90.141)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [142/1000]	Time 10.852 (11.115)	Loss 0.0000 (0.3188)	Prec@1 100.000 (90.210)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [143/1000]	Time 10.851 (11.113)	Loss 0.0000 (0.3166)	Prec@1 100.000 (90.278)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [144/1000]	Time 10.863 (11.112)	Loss 0.0000 (0.3144)	Prec@1 100.000 (90.345)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [145/1000]	Time 10.861 (11.110)	Loss 0.0000 (0.3122)	Prec@1 100.000 (90.411)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [146/1000]	Time 10.855 (11.108)	Loss 0.0000 (0.3101)	Prec@1 100.000 (90.476)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [147/1000]	Time 10.907 (11.107)	Loss 0.0000 (0.3080)	Prec@1 100.000 (90.541)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [148/1000]	Time 10.858 (11.105)	Loss 0.0000 (0.3060)	Prec@1 100.000 (90.604)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [149/1000]	Time 10.856 (11.103)	Loss 0.0000 (0.3039)	Prec@1 100.000 (90.667)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [150/1000]	Time 10.846 (11.102)	Loss 0.0000 (0.3019)	Prec@1 100.000 (90.728)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [151/1000]	Time 10.857 (11.100)	Loss 0.0000 (0.2999)	Prec@1 100.000 (90.789)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [152/1000]	Time 10.843 (11.098)	Loss 0.0001 (0.2980)	Prec@1 100.000 (90.850)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [153/1000]	Time 10.849 (11.097)	Loss 0.0000 (0.2960)	Prec@1 100.000 (90.909)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [154/1000]	Time 10.891 (11.096)	Loss 0.0000 (0.2941)	Prec@1 100.000 (90.968)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [155/1000]	Time 10.849 (11.094)	Loss 0.0169 (0.2923)	Prec@1 100.000 (91.026)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [156/1000]	Time 10.849 (11.092)	Loss 0.0000 (0.2905)	Prec@1 100.000 (91.083)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [157/1000]	Time 10.851 (11.091)	Loss 0.0000 (0.2886)	Prec@1 100.000 (91.139)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [158/1000]	Time 10.848 (11.089)	Loss 0.0000 (0.2868)	Prec@1 100.000 (91.195)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [159/1000]	Time 10.848 (11.088)	Loss 0.0000 (0.2850)	Prec@1 100.000 (91.250)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [160/1000]	Time 10.844 (11.086)	Loss 0.0001 (0.2833)	Prec@1 100.000 (91.304)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [161/1000]	Time 10.947 (11.085)	Loss 0.0000 (0.2815)	Prec@1 100.000 (91.358)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [162/1000]	Time 10.996 (11.085)	Loss 0.0005 (0.2798)	Prec@1 100.000 (91.411)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [163/1000]	Time 10.847 (11.083)	Loss 0.0000 (0.2781)	Prec@1 100.000 (91.463)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [164/1000]	Time 10.860 (11.082)	Loss 0.0000 (0.2764)	Prec@1 100.000 (91.515)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [165/1000]	Time 10.843 (11.081)	Loss 0.0007 (0.2747)	Prec@1 100.000 (91.566)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [166/1000]	Time 10.856 (11.079)	Loss 0.0000 (0.2731)	Prec@1 100.000 (91.617)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [167/1000]	Time 10.847 (11.078)	Loss 1.6770 (0.2814)	Prec@1 0.000 (91.071)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [168/1000]	Time 10.862 (11.077)	Loss 0.0000 (0.2798)	Prec@1 100.000 (91.124)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [169/1000]	Time 10.842 (11.075)	Loss 0.0015 (0.2781)	Prec@1 100.000 (91.176)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [170/1000]	Time 10.846 (11.074)	Loss 0.0000 (0.2765)	Prec@1 100.000 (91.228)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [171/1000]	Time 10.848 (11.073)	Loss 0.0000 (0.2749)	Prec@1 100.000 (91.279)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [172/1000]	Time 10.839 (11.071)	Loss 0.0000 (0.2733)	Prec@1 100.000 (91.329)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [173/1000]	Time 10.839 (11.070)	Loss 2.7735 (0.2877)	Prec@1 0.000 (90.805)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [174/1000]	Time 10.867 (11.069)	Loss 0.0000 (0.2860)	Prec@1 100.000 (90.857)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [175/1000]	Time 10.860 (11.068)	Loss 4.7004 (0.3111)	Prec@1 0.000 (90.341)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [176/1000]	Time 10.851 (11.066)	Loss 0.0000 (0.3094)	Prec@1 100.000 (90.395)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [177/1000]	Time 10.857 (11.065)	Loss 2.2211 (0.3201)	Prec@1 0.000 (89.888)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [178/1000]	Time 10.857 (11.064)	Loss 0.0000 (0.3183)	Prec@1 100.000 (89.944)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [179/1000]	Time 10.842 (11.063)	Loss 0.0000 (0.3166)	Prec@1 100.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [180/1000]	Time 10.851 (11.062)	Loss 0.0000 (0.3148)	Prec@1 100.000 (90.055)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [181/1000]	Time 10.884 (11.061)	Loss 0.0000 (0.3131)	Prec@1 100.000 (90.110)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [182/1000]	Time 10.840 (11.059)	Loss 0.0000 (0.3114)	Prec@1 100.000 (90.164)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [183/1000]	Time 10.832 (11.058)	Loss 0.0000 (0.3097)	Prec@1 100.000 (90.217)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [184/1000]	Time 10.845 (11.057)	Loss 0.0000 (0.3080)	Prec@1 100.000 (90.270)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [185/1000]	Time 10.846 (11.056)	Loss 0.0000 (0.3063)	Prec@1 100.000 (90.323)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [186/1000]	Time 10.848 (11.055)	Loss 9.8200 (0.3572)	Prec@1 0.000 (89.840)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [187/1000]	Time 10.839 (11.054)	Loss 0.0165 (0.3554)	Prec@1 100.000 (89.894)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [188/1000]	Time 10.891 (11.053)	Loss 0.0000 (0.3535)	Prec@1 100.000 (89.947)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [189/1000]	Time 10.999 (11.053)	Loss 0.0000 (0.3517)	Prec@1 100.000 (90.000)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [190/1000]	Time 10.857 (11.051)	Loss 0.0000 (0.3498)	Prec@1 100.000 (90.052)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [191/1000]	Time 10.863 (11.051)	Loss 0.0012 (0.3480)	Prec@1 100.000 (90.104)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [192/1000]	Time 10.864 (11.050)	Loss 0.2664 (0.3476)	Prec@1 100.000 (90.155)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [193/1000]	Time 10.863 (11.049)	Loss 0.0000 (0.3458)	Prec@1 100.000 (90.206)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [194/1000]	Time 10.864 (11.048)	Loss 0.0000 (0.3440)	Prec@1 100.000 (90.256)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [195/1000]	Time 10.889 (11.047)	Loss 0.0000 (0.3423)	Prec@1 100.000 (90.306)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [196/1000]	Time 10.847 (11.046)	Loss 3.9280 (0.3605)	Prec@1 0.000 (89.848)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [197/1000]	Time 10.855 (11.045)	Loss 0.0000 (0.3586)	Prec@1 100.000 (89.899)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [198/1000]	Time 10.849 (11.044)	Loss 0.2259 (0.3580)	Prec@1 100.000 (89.950)
+forwarding
+(27, 65536)
+forwarding
+(576, 65536)
+forwarding
+(576, 32768)
+forwarding
+(1152, 32768)
+forwarding
+(1152, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 16384)
+forwarding
+(2304, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 8192)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+forwarding
+(4608, 2048)
+Test: [199/1000]	Time 10.847 (11.043)	Loss 0.0000 (0.3562)	Prec@1 100.000 (90.000)
+ * Prec@1 90.000
